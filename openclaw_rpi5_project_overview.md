@@ -1,6 +1,6 @@
 # OpenClaw + Raspberry Pi 5 プロジェクト概要
-> Windows Claude / 新規参加者向け・ゼロから理解できる資料  
-> 作成日：2026-04-12
+> Windows Claude / 新規参加者向け・ゼロから理解できる資料
+> 作成日：2026-04-12 / 更新日：2026-04-12 v3
 
 ---
 
@@ -13,191 +13,272 @@
 
 ---
 
-## 2. 現在の保有デバイス一覧
+## 2. 全体構成図
 
-| デバイス | 名前 | スペック | 役割 |
-|---|---|---|---|
-| MacBook Pro | sg1atrantis-2 (macOS 15.7.4) | M2 Pro | **メイン開発機**（毎日使用・触らない） |
-| Windows Tower | LAPTOP-9CPJP82V (Windows 11) | Ryzen 7 7700 + RTX 4070 Ti SUPER + 32GB DDR5 | 重い処理・Claude Code・ゲーム |
-| iPhone | iphone174 (iOS 26.3.1) | — | 操作端末・iMessage |
-| OCI Always Free VM | — | ARM Ubuntu・パブリックIP | 外部ゲートウェイ候補 |
-| **Raspberry Pi 5** | **購入予定** | **8GB・スターターキット** | **OpenClaw実行エンジン・24/7稼働** |
+```mermaid
+flowchart TD
+    subgraph INTERNET["インターネット / 外部"]
+        MSG["Telegram / Discord / Slack"]
+        CF["Cloudflare Workers\nquickconv.cc（画像変換済み）"]
+    end
 
-**Tailscale**で全デバイスが同一プライベートネットワークに接続済み（3台接続確認済み）。
+    subgraph TAILSCALE["自宅ネットワーク（Tailscale VPN）"]
+        subgraph RPI5_BOX["Raspberry Pi 5 / 8GB（購入予定・24/7稼働）"]
+            OC["OpenClaw Gateway + Node"]
+            CC_RPI["Claude Code（軽量タスク）"]
+            WOL["Wake-on-LAN トリガー"]
+        end
+
+        subgraph MAC["MacBook Pro M2 Pro（sg1atrantis-2）"]
+            CC_MAC["Claude Code（現在メイン）"]
+            IMSG["iMessage / BlueBubbles"]
+        end
+
+        subgraph WIN["Windows Tower（LAPTOP-9CPJP82V）"]
+            CC_WIN["Claude Code（重いタスク）"]
+            GPU["RTX 4070 Ti SUPER\nFFmpeg NVEnc（動画変換）"]
+        end
+
+        IPHONE["iPhone（操作端末）"]
+        GH["miyashita337 GitHub\nopenclaw-rpi5-ops / agent-base ..."]
+    end
+
+    subgraph OCI_BOX["OCI Always Free VM（未設定）"]
+        GW["外部ゲートウェイ\nWebhook受付・パブリックIP"]
+    end
+
+    MSG -->|Webhook| GW
+    GW -->|Tailscale| OC
+    GW -.->|スペック不足時は RPI5 が代理| OC
+
+    OC --> CC_RPI
+    OC -->|Tailscale| CC_MAC
+    OC -->|Tailscale| IPHONE
+
+    CC_RPI -->|目標フロー| GH
+    CC_MAC -->|現状フロー| GH
+    CC_WIN --> GH
+
+    WOL -->|Wake-on-LAN（将来）| WIN
+
+    CF -->|動画変換リクエスト・検討中| WOL
+
+    MAC -.->|将来はスリープ可\niMessage使用時のみ起動| IMSG
+
+    style RPI5_BOX fill:#EEEDFE,stroke:#534AB7
+    style MAC fill:#F1EFE8,stroke:#5F5E5A
+    style WIN fill:#E6F1FB,stroke:#185FA5
+    style OCI_BOX fill:#E1F5EE,stroke:#0F6E56
+    style GH fill:#EAF3DE,stroke:#3B6D11
+    style INTERNET fill:#FAECE7,stroke:#993C1D
+```
+
+### フェーズ別の読み方
+
+| フェーズ | 内容 |
+|---|---|
+| **現状** | MacBook が OpenClaw 代理稼働中・RPI5 未着 |
+| **目標** | RPI5 → Claude Code → GitHub 直接フロー / MacBook スリープ可 |
+| **将来** | RPI5 WoL → Windows Tower GPU 処理 / quickconv.cc 動画変換 |
 
 ---
 
-## 3. 購入決定事項
+## 3. 現在の保有デバイス一覧
+
+| デバイス | 名前 | スペック | 役割 | 状態 |
+|---|---|---|---|---|
+| MacBook Pro | sg1atrantis-2 (macOS 15.7.4) | M2 Pro | メイン開発機（将来はスリープ可） | 毎日使用中 |
+| Windows Tower | LAPTOP-9CPJP82V (Windows 11) | Ryzen 7 7700 + RTX 4070 Ti SUPER + 32GB DDR5 | 重い処理・Claude Code・GPU処理（WoL対象） | 稼働中 |
+| iPhone | iphone174 (iOS 26.3.1) | — | 操作端末・iMessage | 稼働中 |
+| OCI Always Free VM | — | ARM Ubuntu・パブリックIP | 外部ゲートウェイ第一候補 | 未設定 |
+| **Raspberry Pi 5** | **購入予定** | **8GB・スターターキット** | **OpenClaw・Claude Code・24/7・WoLトリガー** | **Amazon注文予定** |
+
+**Tailscale** で全デバイスが同一プライベートネットワークに接続済み（3台確認済み）。
+
+---
+
+## 4. 購入決定事項
 
 ### Raspberry Pi 5 スターターキット（8GB）
-- **購入先**: Amazon（Vesonn JP 出品・Amazon発送）
+- **購入先**: Amazon（Vesonn JP 出品・Amazon 発送）
 - **価格**: ¥31,964（税込）
-- **セット内容**: 本体8GB・公式ケース（ファン付き）・電源5.1V/5A・64GB SD（OS済み）・HDMIケーブル・アクティブクーラー
-- **技適**: 取得済み確認
-- **理由**: OpenClaw + Cloud API中継専用なら8GBで十分。ランニングコスト年間¥1,900。
+- **セット内容**: 本体 8GB・公式ケース（ファン付き）・電源 5.1V/5A・64GB SD（OS 済み）・HDMIケーブル・アクティブクーラー
 
 ---
 
-## 4. 全体アーキテクチャ（決定済み）
+## 5. GitHubフロー：MacBook依存をなくす（目標）
 
 ```
-iPhoneから指示（iMessage / Telegram / Discord）
-          ↓
-OCI Always Free VM
-（外部Webhook受付・パブリックIP・OpenClaw Gateway候補）
-          ↓ Tailscale経由
-RPI5-8GB（自宅・24/7稼働）
-  ├─ OpenClaw Node（スキル実行・ブラウザ自動化・cron）
-  ├─ 開発サンドボックス（本番MacBookと切り離し）
-  └─ Claude Code（インストール予定）
-          ↓ Tailscale経由
-MacBook Pro M2 Pro（sg1atrantis-2）
-  ├─ Claude Code（メイン開発）
-  ├─ iMessage連携（BlueBubbles経由）
-  └─ 本番開発機（OpenClawは走らせない）
-
-Windows Tower（LAPTOP-9CPJP82V）
-  ├─ Claude Code（重い処理・RTX 4070 Ti SUPER活用）
-  └─ quickconv.cc バックエンド処理候補（別途検討）
+以前：RPI5 → MacBook Pro → Claude Code → miyashita337 GitHub
+目標：RPI5 → Claude Code（RPI5上） → miyashita337 GitHub
 ```
 
-**外部公開方法**: Cloudflare Tunnel または Tailscale Funnel（追加費用ゼロ）
+**可否：可能。** RPI5（ARM64）で Claude Code は動作する。
+- 軽量タスク（GitHub push・issue管理・軽いコード編集）は RPI5 単独で完結
+- 重いタスクは Windows Tower の Claude Code に転送する使い分けが現実的
+- iMessage を使わない場合は MacBook のスリープが可能
 
 ---
 
-## 5. ランニングコスト（年間）
+## 6. quickconv.cc + Windows Tower 動画変換連携（検討中）
 
-| 項目 | 年額 |
-|---|---|
-| RPI5 電気代（7W・24/7） | 約 ¥1,900 |
-| OCI Always Free VM | ¥0 |
-| Tailscale（Personal・デバイス無制限） | ¥0 |
-| Cloud API（Claude Max サブスク定額内） | ¥0 追加 |
-| **合計** | **約 ¥1,900/年** |
+**現状**：quickconv.cc は Cloudflare Workers で画像変換まで対応済み。
 
-※ Windows Towerを24/7サーバーにした場合：約¥27,000〜40,000/年（非推奨）
+**課題**：動画変換など GPU が必要な処理は Cloudflare では難しい。
+
+```mermaid
+sequenceDiagram
+    participant U as ユーザー
+    participant CF as Cloudflare Workers<br/>quickconv.cc
+    participant RPI as RPI5<br/>（中継・WoL）
+    participant WIN as Windows Tower<br/>RTX 4070 Ti SUPER
+
+    U->>CF: 動画変換リクエスト
+    CF->>RPI: Cloudflare Tunnel 経由
+    RPI->>WIN: Wake-on-LAN 送信
+    WIN-->>WIN: 起動・FFmpeg NVEnc 実行
+    WIN->>CF: 変換結果を返す
+    CF->>U: レスポンス
+```
+
+**可否判断まとめ**：
+
+| 項目 | 判定 | 備考 |
+|---|---|---|
+| Cloudflare Tunnel → Windows Tower | ✅ 技術的に可能 | cloudflared を Windows に導入 |
+| RPI5 経由の Wake-on-LAN | ✅ 可能 | WoL パケット送信は RPI5 から可能 |
+| FFmpeg + NVEnc（RTX 4070 Ti SUPER） | ✅ 可能 | CUDA 対応・高速エンコード |
+| 自宅回線を本番バックエンドに | ⚠️ リスクあり | 停電・回線障害が本番障害になる |
+| Windows の常時起動 vs WoL | △ 要検討 | WoL 設定は BIOS + ルーター設定が必要 |
+
+→ **詳細設計は別セッションで Windows Tower の Claude Code に依頼する**
 
 ---
 
-## 6. OpenClawとは
+## 7. ランニングコスト（年間）
 
-**OpenClaw（旧名：Clawdbot → Moltbot）**  
-- オープンソースの自律型AIエージェント（GitHub Stars: 247,000+）
-- LLMを使ってWhatsApp・Telegram・Slack・Discord・iMessageなどのメッセージプラットフォーム経由でタスクを実行
-- 2025年11月登場、2026年1月にウイルスしてMac miniが品切れになるほど話題に
-- 開発者：Peter Steinberger（オーストリア）→ 2026年2月にOpenAIに入社
+| 項目 | 年額 | 備考 |
+|---|---|---|
+| RPI5 電気代（7W・24/7） | 約 ¥1,900 | |
+| OCI Always Free VM | ¥0 | Always Free 枠内 |
+| Tailscale（Personal） | ¥0 | デバイス無制限 |
+| Cloud API（Claude Max サブスク定額内） | ¥0 追加 | |
+| Windows Tower（WoL・必要時のみ起動） | 最小化 | 常時起動は年 ¥27,000〜40,000 のため非推奨 |
+| **合計（RPI5 稼働分）** | **約 ¥1,900** | |
 
-### OpenClawでできること
+---
+
+## 8. OpenClaw でできること
 
 | 機能 | 可否 | 備考 |
 |---|---|---|
-| メッセージ受信・返信 | ✅ | Telegram/Discord/Slack/iMessage等 |
-| Cloud API中継（Claude/GPT） | ✅ | RPI5はゲートウェイのみ |
-| ブラウザ自動化（Chromium） | ✅ | メモリ8GBで安定動作 |
-| cron・定時タスク | ✅ | 毎朝ニュース収集・Slack投稿等 |
-| デスクトップ操作 | ✅ | macOS/Windowsノード経由で可能 |
-| スクリーンショット取得 | ✅ | iOSノード・macOSノード経由 |
-| ファイル操作 | ✅ | |
-| GitHub連携 | ✅ | Skills経由 |
+| メッセージ受信・返信 | ✅ | Telegram/Discord/Slack/iMessage 等 |
+| Cloud API 中継（Claude/GPT） | ✅ | RPI5 はゲートウェイのみ |
+| ブラウザ自動化（Chromium） | ✅ | 8GB で安定動作 |
+| cron・定時タスク | ✅ | 毎朝ニュース収集・Slack 投稿等 |
+| デスクトップ操作 | ✅ | macOS/Windows ノード経由 |
+| スクリーンショット取得 | ✅ | iOS/macOS ノード経由 |
+| GitHub 連携 | ✅ | Skills 経由 |
+| Wake-on-LAN トリガー | ✅ | exec スキルでコマンド実行可 |
 | **完全無人・ゼロタッチ開発** | ❌ | 人間の確認ステップが設計上必要 |
 
-### 重要な認識訂正
-
-「要件を出すだけで開発・実装・運用・検証に一切タッチしない」は**現時点では実現しません**。  
-ただし「iPhoneから指示 → Claude Codeが自律実行 → PR作成まで自動」という**ほぼ自律**な構成は実現可能。
-
 ---
 
-## 7. やりたいことリスト（RPI5 + OpenClaw）
+## 9. やりたいことリスト
 
-### メイン用途：OpenClaw AIエージェント
+### OpenClaw AIエージェント
 - [ ] OpenClaw Gateway インストール・設定
 - [ ] Tailscale 経由で OCI VM・MacBook と接続
-- [ ] セキュリティ設定（bind:127.0.0.1・認証トークン・allowFrom）
+- [ ] セキュリティ設定（bind・認証トークン・allowFrom）
 - [ ] Telegram / Discord / Slack チャンネル接続
-- [ ] iMessage連携（MacBookのBlueBubbles経由）
-- [ ] cron 定時タスク（毎朝ニュース収集・要約・Slack投稿）
-- [ ] GitHub連携（リポジトリ監視・PR自動化）
-- [ ] ブラウザ自動化スキル
-
-### 開発自動化（Claude Code連携）
-- [ ] `agent-base` リポジトリを起点にOpenClaw→Claude Code連携
-- [ ] iPhoneから「このリポジトリのテスト直して」→ 自動実行・PR作成
-- [ ] デスクトップ操作・スクリーンショットによる動作検証自動化
+- [ ] iMessage 連携（MacBook の BlueBubbles 経由）
+- [ ] cron 定時タスク（毎朝ニュース収集・要約・Slack 投稿）
+- [ ] GitHub 連携（リポジトリ監視・PR 自動化）
 
 ### 外部公開・ゲートウェイ
-- [ ] Cloudflare Tunnel または Tailscale Funnel で外部公開（無料）
-- [ ] OCI VM との役割分担（外部受付 → RPI5実行）
+- [ ] OCI VM を外部ゲートウェイとして設定（第一候補）
+- [ ] OCI スペック不足の場合：RPI5 に Cloudflare Tunnel / Tailscale Funnel（代替）
+
+### 開発自動化（Claude Code 連携）
+- [ ] RPI5 に Claude Code インストール
+- [ ] RPI5 単独で miyashita337 GitHub への push フロー確立
+- [ ] agent-base を起点に OpenClaw → Claude Code 連携の最小構成
+- [ ] iPhone から指示 → 自動実行・PR 作成
+
+### quickconv.cc + Windows Tower（別セッションで設計）
+- [ ] Cloudflare Tunnel → Windows Tower の接続確認
+- [ ] Wake-on-LAN 設定（BIOS + ルーター）
+- [ ] FFmpeg + NVEnc 動作確認（`ffmpeg -encoders | grep nvenc`）
+- [ ] 動画変換リクエストの自動ルーティング実装
 
 ---
 
-## 8. 管理リポジトリ一覧
+## 10. 管理リポジトリ一覧
 
 | リポジトリ | 概要 |
 |---|---|
+| miyashita337/openclaw-rpi5-ops | **本プロジェクト総合管理（新規作成済み）** |
 | miyashita337/agent-base | エージェント基盤テンプレート（最重要） |
-| miyashita337/claude-context-manager | Claudeセッション管理ユーティリティ（Rust製） |
-| miyashita337/dev_tool | AutoHotkey v2スクリプト・開発ツール集 |
-| miyashita337/segment-anything | AI画像セグメンテーション |
-| miyashita337/video-qa | 動画QAシステム |
-| miyashita337/obsidian_img_annotator | Obsidian画像アノテーター |
-| miyashita337/claude-hub | Claudeハブ |
+| miyashita337/claude-context-manager | Claude セッション管理（Rust 製） |
+| miyashita337/dev_tool | AutoHotkey v2・開発ツール集 |
+| miyashita337/segment-anything | AI 画像セグメンテーション |
+| miyashita337/video-qa | 動画 QA システム |
+| miyashita337/obsidian_img_annotator | Obsidian 画像アノテーター |
+| miyashita337/claude-hub | Claude ハブ |
 | miyashita337/vive-reading | 読書系ツール |
-| miyashita337/discord-markdown-enhancer | Discord Markdown拡張 |
+| miyashita337/discord-markdown-enhancer | Discord Markdown 拡張 |
 | miyashita337/team_salary | チーム給与管理 |
-| miyashita337/team_salary_kdp | KDP（Kindle）収益管理 |
+| miyashita337/team_salary_kdp | KDP 収益管理 |
 | miyashita337/team_salary_digital | デジタル収益管理 |
 | miyashita337/team_salary_trading | トレーディング管理 |
-| miyashita337/oci_develop | OCI開発環境 |
+| miyashita337/oci_develop | OCI 開発環境 |
 
 ---
 
-## 9. 別途進行中のタスク（別セッションで対応）
+## 11. 次のアクション
 
-### quickconv.cc バックエンド処理の自宅化
-- **サービス**: https://quickconv.cc（Cloudflare Workers運用中の画像・動画変換サービス）
-- **アイデア**: 外部インスタンスの代わりにWindowsタワー（RTX 4070 Ti SUPER + FFmpeg NVEnc）で処理
-- **構成**: Cloudflare Workers → Cloudflare Tunnel → Windows Tower
-- **状態**: 設計検討中・別セッションでClaude Codeに依頼予定
+### 今すぐ
+1. Amazon で RPI5 スターターキット購入（¥31,964）
+2. `openclaw-rpi5-ops` リポジトリへ本ファイルを push
 
----
-
-## 10. 次のアクション
-
-### 今すぐやること
-1. **Amazonでスターターキット購入**（¥31,964・Vesonn JP・Amazon発送確認済み）
-2. 届いたら開封・OS起動確認
-
-### RPI5到着後
-3. Tailscaleインストール・既存tailnetに追加
-4. OpenClaw Gatewayセットアップ（`docs/install/raspberry-pi`参照）
+### RPI5 到着後
+3. Tailscale インストール → 既存 tailnet に追加
+4. OpenClaw Gateway セットアップ（`docs/install/raspberry-pi` 参照）
 5. Telegram チャンネル接続テスト
-6. OCI VM との連携設定
+6. OCI VM 外部ゲートウェイ設定（または Cloudflare Tunnel 代替）
+7. Claude Code インストール → GitHub push テスト
 
-### 新しいセッションで使う引き継ぎ文
+### 別セッション（Windows Tower Claude Code で）
+- quickconv.cc + Windows Tower 動画変換連携の詳細設計・実装
+- GitHub Projects（miyashita337）作成・全リポジトリ横断管理
+
+### 新しいセッション用引き継ぎ文
+
 ```
 RPI5-8GB スターターキット（Amazon ¥31,964）購入済み。
-OCI Always Free VM・MacBook Pro M2 Pro（sg1atrantis-2）・
-Windows Tower（LAPTOP-9CPJP82V）・Tailscale 全接続済み構成。
-OpenClaw Gateway セットアップを開始したい。
-セキュリティ設定（bind:127.0.0.1・認証トークン・allowFrom）まで一気に設定したい。
+構成：OCI Always Free VM（外部ゲートウェイ第一候補・未設定）
+     + RPI5-8GB（OpenClaw・Claude Code・24/7・WoLトリガー）
+     + MacBook Pro M2 Pro（sg1atrantis-2・将来スリープ可）
+     + Windows Tower（RTX 4070 Ti SUPER・重い処理・WoL対象）
+     + Tailscale 全接続済み
+目標：RPI5 → Claude Code → miyashita337 GitHub の直接フロー確立
+次のタスク：[ここに具体タスクを入れる]
 ```
 
 ---
 
-## 11. セキュリティ設定チェックリスト（OpenClaw必須）
+## 12. セキュリティ設定チェックリスト（OpenClaw 必須）
 
 | 優先度 | 設定 | 内容 |
 |---|---|---|
-| 🔴 必須 | Gateway bind | `127.0.0.1` に変更（デフォルト0.0.0.0はNG） |
-| 🔴 必須 | 認証トークン | 256bit以上のランダムトークン設定 |
-| 🔴 必須 | allowFrom | 自分の番号/IDのみ許可 |
-| 🔴 必須 | 最新版に更新 | CVE-2026-25253（CVSS 8.8 RCE）等138件のCVEあり |
-| 🟡 推奨 | APIキー分離 | `.env`ファイル化・`chmod 600` |
-| 🟡 推奨 | elevated制限 | 自分のIDのみに限定 |
-| 🟡 推奨 | mDNS最小化 | `OPENCLAW_DISABLE_BONJOUR=1` |
-| 🟢 任意 | NVMe SSD化 | SDカードより信頼性が高い（後回しOK） |
+| 🔴 必須 | Gateway bind | `127.0.0.1` に変更 |
+| 🔴 必須 | 認証トークン | 256bit 以上のランダムトークン |
+| 🔴 必須 | allowFrom | 自分の番号/ID のみ許可 |
+| 🔴 必須 | 最新版に更新 | CVE 138 件・41% が High/Critical |
+| 🟡 推奨 | API キー分離 | `.env` ファイル化・`chmod 600` |
+| 🟡 推奨 | elevated 制限 | 自分の ID のみに限定 |
+| 🟡 推奨 | mDNS 最小化 | `OPENCLAW_DISABLE_BONJOUR=1` |
 
 ---
 
-*このドキュメントは2026-04-12時点の情報をもとに作成。*
+*更新：2026-04-12 v3 / Mermaid構成図・シーケンス図を追加。quickconv.cc WoL連携・RPI5直接GitHubフロー・MacBookスリープ可条件を反映*
