@@ -1,0 +1,46 @@
+# Secrets
+.env
+.env.local
+.env.bak
+.env.bak.*
+*.pem
+*.key
+
+# Claude Code internal state
+.claude/.tool-failure-streak
+.claude/.tool-failure-streak.lock
+.claude/progress.json
+.supervisor-relay-url
+
+# Bootstrap artifacts (regenerated)
+zenn-articles-bootstrap.tar.gz
+
+# Screenshots with Tailnet identifiers (captures/zenn-03/* contain Tailnet suffix and peer hostnames)
+captures/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Cowork bootstrap state
+.cowork-bootstrap.done
+package-lock.json
+.review-checklist/
+wells_vnc
