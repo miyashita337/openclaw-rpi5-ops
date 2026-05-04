@@ -1,0 +1,65 @@
+[Unit]
+Description=OpenClaw Gateway
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/openclaw gateway --bind loopback --port 18789 --auth token --allow-unconfigured
+Restart=on-failure
+RestartSec=10s
+
+User=openclaw
+Group=openclaw
+EnvironmentFile=/etc/openclaw/openclaw.env
+Environment=HOME=/var/lib/openclaw
+Environment=NODE_ENV=production
+WorkingDirectory=/var/lib/openclaw
+
+# === hardening: Tier A (OS isolation) ===
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+LockPersonality=yes
+RestrictSUIDSGID=yes
+RemoveIPC=yes
+RestrictNamespaces=yes
+RestrictRealtime=yes
+SystemCallArchitectures=native
+ReadWritePaths=/var/lib/openclaw /var/log/openclaw
+PrivateTmp=yes
+
+# === hardening: Tier B (capabilities, namespaces, clock/proc) ===
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+ProtectClock=yes
+ProtectHostname=yes
+ProtectProc=invisible
+ProcSubset=pid
+PrivateDevices=yes
+PrivateUsers=no
+KeyringMode=private
+UMask=0077
+
+# === hardening: Tier B-2 (system call deny list, Node.js JIT compatible) ===
+SystemCallFilter=~@swap @reboot @raw-io @privileged @mount @module @debug @cpu-emulation @clock @obsolete
+SystemCallErrorNumber=EPERM
+
+# === hardening: Tier C (resource limits) ===
+MemoryMax=2G
+TasksMax=512
+LimitNOFILE=65536
+MemoryAccounting=yes
+TasksAccounting=yes
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=openclaw-gateway
+
+[Install]
+WantedBy=multi-user.target
