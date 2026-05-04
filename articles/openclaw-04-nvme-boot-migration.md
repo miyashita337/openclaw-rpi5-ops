@@ -14,7 +14,7 @@ published: false  # 公開前に true に
 4. MagicDNS で `ssh hostname` のホスト名だけで届く
 5. 常時稼働サーバーは **Key Expiry を Disable** にしておくのが定石
 
-![Tailscale 管理画面に hostname が SSH バッジ付きで並ぶ様子](/images/openclaw-04/01-tailscale-admin.png)
+![Tailscale 管理画面に hostname が SSH バッジ付きで並ぶ様子](/images/rpi5-tailscale-ssh-magicdns/01-tailscale-admin.png)
 
 ## はじめに
 
@@ -108,7 +108,7 @@ ssh user@hostname
 tailscale ssh user@hostname
 ```
 
-![Mac メニューバーで Tailscale が Connected の状態](/images/openclaw-04/02-mac-menubar.png)
+![Mac メニューバーで Tailscale が Connected の状態](/images/rpi5-tailscale-ssh-magicdns/02-mac-menubar.png)
 
 初回は次のような追加認証が走る。これは Tailscale のデフォルト ACL の **`check` モード** の挙動で、Tailnet オーナー自身でも 12時間ごとにブラウザ確認が要求される(後述)。
 
