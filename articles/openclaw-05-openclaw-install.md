@@ -335,5 +335,4 @@ sudo rm /etc/sudoers.d/openclaw-claude-ops
 
 - OpenClaw: https://openclaw.ai
 - systemd.exec(5): https://www.freedesktop.org/software/systemd/man/systemd.exec.html
-- systemd hardening チェックリスト (本連載 repo): `/IMPLEMENTATION_CHECKLIST.md`
 - Issue #4 (本作業の hardening trace): https://github.com/miyashita337/openclaw-rpi5-ops/issues/4
