@@ -18,6 +18,9 @@ zenn-articles-bootstrap.tar.gz
 # Screenshots with Tailnet identifiers (captures/zenn-03/* contain Tailnet suffix and peer hostnames)
 captures/
 
+# Article images live in ~/zenn-articles/images/ (Zenn local preview repo)
+images/
+
 # Node
 node_modules/
 
