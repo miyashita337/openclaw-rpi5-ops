@@ -311,6 +311,40 @@ sudo rm /etc/sudoers.d/openclaw-claude-ops
 **NOPASSWD は scope を厳密に切り、作業終了後に撤去する**。 全コマンド NOPASSWD は cyber security の伝統的な anti-pattern (compromise 時に root と等価)。 本記事の例では `systemctl <op> openclaw-gateway` / `journalctl -u openclaw-gateway` / `cat|cp|tee /etc/systemd/system/openclaw-gateway.service*` / `systemd-analyze {security,verify}` の operations 限定。
 :::
 
+### 撤去フェーズで踏んだ罠: sudo timestamp cache
+
+hardening 完了後に `sudo rm /etc/sudoers.d/openclaw-claude-ops` で NOPASSWD ファイルを削除し、続けて Claude に `sudo -n systemctl daemon-reload` で失効確認させた。 期待は「password 要求で `rc=1`」だが、実測は **`rc=0` で成功**してしまった。
+
+原因は `sudo` の **credential timestamp cache** (default 15 分)。 ユーザーが直前に interactive `sudo rm` を打った時点でクレデンシャルがキャッシュされ、その有効期限内に NOPASSWD 失効を検査しても **キャッシュ経由で `sudo -n` が通り続ける**。 NOPASSWD 撤去自体は成功しているが、検査側の見立てを誤らせる。
+
+正しい検査手順は `sudo -k` でキャッシュを明示クリアしてから検査すること:
+
+```bash
+# WRONG (false negative: 撤去済みなのに sudo -n が通って「失効してない」と誤断する可能性)
+sudo rm /etc/sudoers.d/openclaw-claude-ops
+sudo -n systemctl daemon-reload  # → rc=0 (キャッシュで成功)
+
+# RIGHT (キャッシュをクリアしてから検査)
+sudo rm /etc/sudoers.d/openclaw-claude-ops
+sudo -k                           # ← ここで cache 破棄
+sudo -n systemctl daemon-reload   # → rc=1 + "パスワードが必要です"
+```
+
+「撤去 → 即検査」の自動化スクリプトを書く場合は **必ず `sudo -k` を間に挟む**。 これは NOPASSWD 撤去スクリプト共通のチェックパターンとして覚えておく価値がある。
+
+### 副次効果: 安全姿勢の完全復帰
+
+撤去後の状態:
+
+| 項目 | 状態 |
+|---|---|
+| `/etc/sudoers.d/openclaw-claude-ops` | 削除済 (`ls` で「ファイルがありません」確認) |
+| `sudo -k && sudo -n systemctl daemon-reload` | `パスワードが必要です` (rc=1) |
+| Claude が wells で root を passwordless で取れる経路 | 完全に閉じた |
+| 残存している Claude の自律権限 | `Bash(ssh username@hostname:*)` (= passwordless ではないため起動時 keychain 経由でも sudo は password 要求に戻った) |
+
+これで **hardening 作業中だけ blast radius を広げ、終わったら元の最小権限に戻す** という ephemeral elevation のサイクルが完成した。 全コマンド sudo NOPASSWD を恒久的に貼ったままにしないこと。 (このサイクル自体を `op-up.sh` / `op-down.sh` のような対のスクリプトにしておくと心理的な障壁が下がる、というのは別記事ネタ。)
+
 ## ハマりポイントまとめ
 
 | # | 症状 | 原因 | 解決 |
