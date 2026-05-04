@@ -12,7 +12,7 @@
 
 set -euo pipefail
 
-WORKSPACE="$HOME/openclaw-rpi5-ops"
+WORKSPACE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DEFAULT_DIR="$WORKSPACE/screenshots"
 
 # 引数解釈

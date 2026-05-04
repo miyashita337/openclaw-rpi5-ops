@@ -44,6 +44,5 @@ Thumbs.db
 
 # Cowork bootstrap state
 .cowork-bootstrap.done
-package-lock.json
 .review-checklist/
 wells_vnc

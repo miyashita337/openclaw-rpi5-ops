@@ -97,7 +97,9 @@ def resolve_token() -> str:
         env = load_dotenv(root / ".env")
         if env.get("GH_TOKEN"):
             return env["GH_TOKEN"]
-    die("認証トークンが見つかりません。`gh auth login --with-token` を実行するか .env に GH_TOKEN を設定してください")
+    die(
+        "認証トークンが見つかりません。`gh auth login --with-token` を実行するか .env に GH_TOKEN を設定してください"
+    )
 
 
 def resolve_repo(explicit: Optional[str]) -> str:
@@ -109,16 +111,24 @@ def resolve_repo(explicit: Optional[str]) -> str:
             return v
     # try git remote
     try:
-        out = subprocess.check_output(
-            ["git", "config", "--get", "remote.origin.url"],
-            stderr=subprocess.DEVNULL,
-        ).decode().strip()
-        m = re.match(r"^(?:https://github\.com/|git@github\.com:)([^/]+/[^/]+?)(?:\.git)?$", out)
+        out = (
+            subprocess.check_output(
+                ["git", "config", "--get", "remote.origin.url"],
+                stderr=subprocess.DEVNULL,
+            )
+            .decode()
+            .strip()
+        )
+        m = re.match(
+            r"^(?:https://github\.com/|git@github\.com:)([^/]+/[^/]+?)(?:\.git)?$", out
+        )
         if m:
             return m.group(1)
     except Exception:
         pass
-    die("リポジトリが指定されていません。-R OWNER/REPO を指定するか `gh repo set-default OWNER/REPO` を実行してください")
+    die(
+        "リポジトリが指定されていません。-R OWNER/REPO を指定するか `gh repo set-default OWNER/REPO` を実行してください"
+    )
 
 
 def get_client():
@@ -160,7 +170,9 @@ def cmd_auth_status(args: argparse.Namespace) -> None:
         print(f"github.com")
         print(f"  ✓ Logged in to github.com as {user.login}")
         print(f"  ✓ Token: ***{resolve_token()[-4:]}")
-        print(f"  ✓ Rate limit: {rate.remaining}/{rate.limit} (reset {rate.reset.isoformat()})")
+        print(
+            f"  ✓ Rate limit: {rate.remaining}/{rate.limit} (reset {rate.reset.isoformat()})"
+        )
     except Exception as e:
         die(f"認証エラー: {e}")
 
@@ -170,16 +182,22 @@ def cmd_repo_view(args: argparse.Namespace) -> None:
     g = get_client()
     repo = g.get_repo(repo_name)
     if args.json:
-        print(json.dumps({
-            "name": repo.name,
-            "full_name": repo.full_name,
-            "description": repo.description,
-            "url": repo.html_url,
-            "default_branch": repo.default_branch,
-            "private": repo.private,
-            "stars": repo.stargazers_count,
-            "open_issues": repo.open_issues_count,
-        }, indent=2, ensure_ascii=False))
+        print(
+            json.dumps(
+                {
+                    "name": repo.name,
+                    "full_name": repo.full_name,
+                    "description": repo.description,
+                    "url": repo.html_url,
+                    "default_branch": repo.default_branch,
+                    "private": repo.private,
+                    "stars": repo.stargazers_count,
+                    "open_issues": repo.open_issues_count,
+                },
+                indent=2,
+                ensure_ascii=False,
+            )
+        )
         return
     print(f"name:        {repo.full_name}")
     print(f"description: {repo.description or '(none)'}")
@@ -211,16 +229,23 @@ def cmd_issue_list(args: argparse.Namespace) -> None:
             break
         rows.append(iss)
     if args.json:
-        print(json.dumps(
-            [{
-                "number": i.number,
-                "title": i.title,
-                "state": i.state,
-                "labels": [l.name for l in i.labels],
-                "url": i.html_url,
-                "createdAt": i.created_at.isoformat(),
-            } for i in rows],
-            indent=2, ensure_ascii=False))
+        print(
+            json.dumps(
+                [
+                    {
+                        "number": i.number,
+                        "title": i.title,
+                        "state": i.state,
+                        "labels": [l.name for l in i.labels],
+                        "url": i.html_url,
+                        "createdAt": i.created_at.isoformat(),
+                    }
+                    for i in rows
+                ],
+                indent=2,
+                ensure_ascii=False,
+            )
+        )
         return
     if not rows:
         print(f"no open issues in {repo_name}")
@@ -228,7 +253,9 @@ def cmd_issue_list(args: argparse.Namespace) -> None:
     print(f"\nShowing {len(rows)} issue(s) in {repo_name}\n")
     for i in rows:
         labels = ",".join(l.name for l in i.labels)
-        print(f"#{i.number:<5} {i.state:<7} {i.title}   {f'({labels})' if labels else ''}")
+        print(
+            f"#{i.number:<5} {i.state:<7} {i.title}   {f'({labels})' if labels else ''}"
+        )
 
 
 def cmd_issue_create(args: argparse.Namespace) -> None:
@@ -247,16 +274,22 @@ def cmd_issue_view(args: argparse.Namespace) -> None:
     repo = g.get_repo(repo_name)
     iss = repo.get_issue(args.number)
     if args.json:
-        print(json.dumps({
-            "number": iss.number,
-            "title": iss.title,
-            "state": iss.state,
-            "body": iss.body,
-            "url": iss.html_url,
-            "author": iss.user.login,
-            "labels": [l.name for l in iss.labels],
-            "createdAt": iss.created_at.isoformat(),
-        }, indent=2, ensure_ascii=False))
+        print(
+            json.dumps(
+                {
+                    "number": iss.number,
+                    "title": iss.title,
+                    "state": iss.state,
+                    "body": iss.body,
+                    "url": iss.html_url,
+                    "author": iss.user.login,
+                    "labels": [l.name for l in iss.labels],
+                    "createdAt": iss.created_at.isoformat(),
+                },
+                indent=2,
+                ensure_ascii=False,
+            )
+        )
         return
     print(f"#{iss.number} {iss.title}")
     print(f"state:  {iss.state}")
@@ -321,8 +354,12 @@ def cmd_api(args: argparse.Namespace) -> None:
             die(f"-f は KEY=VALUE 形式: {f}")
         k, v = f.split("=", 1)
         fields[k] = v
-    headers, data = g._Github__requester.requestJsonAndCheck(  # type: ignore[attr-defined]
-        method, args.endpoint if args.endpoint.startswith("/") else "/" + args.endpoint,
+    # PyGithub v2.1+ exposes `requester` publicly; fallback to private name-mangled
+    # attribute for older versions. Both point to the same internal Requester.
+    requester = getattr(g, "requester", None) or g._Github__requester  # type: ignore[attr-defined]
+    headers, data = requester.requestJsonAndCheck(
+        method,
+        args.endpoint if args.endpoint.startswith("/") else "/" + args.endpoint,
         input=fields if fields else None,
     )
     print(json.dumps(data, indent=2, ensure_ascii=False))
@@ -384,7 +421,9 @@ def build_parser() -> argparse.ArgumentParser:
     psub = pr.add_subparsers(dest="pr_cmd", required=True)
     p_list = psub.add_parser("list")
     p_list.add_argument("-R", "--repo", default=None)
-    p_list.add_argument("--state", choices=["open", "closed", "merged", "all"], default="open")
+    p_list.add_argument(
+        "--state", choices=["open", "closed", "merged", "all"], default="open"
+    )
     p_list.add_argument("-L", "--limit", type=int, default=30)
     p_list.set_defaults(func=cmd_pr_list)
     p_view = psub.add_parser("view")
