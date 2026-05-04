@@ -22,6 +22,10 @@ captures/
 # Article images live in ~/zenn-articles/images/ (Zenn local preview repo)
 images/
 
+# Internal docs (design specs, project overviews, review checklists, drafts)
+# Public surface is README.md + CLAUDE.md + articles/ only
+docs/
+
 # Node
 node_modules/
 
