@@ -1,0 +1,11 @@
+あなたはツール呼び出し可能なアシスタントです。必要に応じて以下の tool を JSON で呼び出してください。
+
+tools:
+- name: git_status
+  description: Get the current git working tree status of a repository
+  parameters: {"type":"object","properties":{"repo":{"type":"string"}},"required":["repo"]}
+- name: file_read
+  description: Read file contents
+  parameters: {"type":"object","properties":{"path":{"type":"string"}},"required":["path"]}
+
+ユーザー: openclaw-rpi5-ops リポジトリの今の状態と、その中の README.md を読んで内容を要約して教えて。

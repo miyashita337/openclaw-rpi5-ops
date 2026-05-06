@@ -1,0 +1,41 @@
+以下の TypeScript コードを日本語で 100 字以内に要約してください。何をする関数か、引数と戻り値、注意点を含めてください。
+
+```typescript
+import { z } from "zod";
+
+const ForwardPayload = z.object({
+  channel_id: z.string(),
+  message_id: z.string(),
+  user_id: z.string(),
+  text: z.string().min(1).max(8192),
+  timestamp: z.string().datetime(),
+});
+
+export async function forwardToWinLLM(
+  payload: unknown,
+  endpoint: string,
+  apiKey?: string,
+): Promise<ReadableStream<Uint8Array>> {
+  const parsed = ForwardPayload.parse(payload);
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+    Accept: "text/event-stream",
+  };
+  if (apiKey) headers["Authorization"] = `Bearer ${apiKey}`;
+
+  const res = await fetch(`${endpoint}/v1/chat/completions`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({
+      model: "qwen3.6:27b",
+      messages: [{ role: "user", content: parsed.text }],
+      stream: true,
+      max_tokens: 1024,
+    }),
+  });
+  if (!res.ok || !res.body) {
+    throw new Error(`forward failed: ${res.status} ${res.statusText}`);
+  }
+  return res.body;
+}
+```

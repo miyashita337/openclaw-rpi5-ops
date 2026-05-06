@@ -1,0 +1,11 @@
+以下の文章を 200 字以内に日本語で要約してください。技術的な要点を優先し、固有名詞は維持してください。
+
+---
+
+OpenClaw daemon を openclaw system user + Tier A/B/B-2/C hardening でスコア 1.4 まで落としたが、ユーザー入力経路 (channels) がまだ無い。OpenClaw は標準で Discord / Slack / LINE 等の channel 統合を持っているので、まず Discord を最初の input 経路として開通させる。
+
+Discord 統合の構成方針として 4 案を比較した。(A) Mac の claude-hub だけに Discord を持たせる案は credential 直結で開発体験が良いが、Mac 閉時に Bot が沈黙する。(B) RPi5 の OpenClaw だけに持たせる案は 24h 稼働するが、重実装も全部 RPi5 で走ることになり、Cortex-A76 で npm install が遅く Mac の credential も使えない。(C) Mac と RPi5 両方に同じ Bot Token を貼る並列案は、Discord API が同一 Bot Token の並列 connection を許さないため Disallowed intents / Already identified エラーが出て成立しない。Bot メッセージの二重投稿問題も併発する。(D) RPi5 が Discord を受け、LLM 推論は Windows タワーへ forward するハイブリッド案は、24h 受け + LLM self-hosted + OpenAI 依存切れの三点で優位だが、forward プロトコル (acp) を別途設計する必要がある。最終的には案 D を採用し、本記事では受信側のみ開通、forward 側は次回 #7 で扱う。
+
+Privileged Intents は Server Members + Message Content の両方を ON にしないと Bot がメンションに反応しない。Message Content だけ ON だと journal に limited 警告は出るが起動は成功するため「動いてる風」になる罠がある。OpenAI billing canceled 状態だと Bot は Something went wrong という Generic な Discord エラー文を返すが、journalctl を見ると model_fallback_decision reason=auth と OpenAI 側のエラーが記録されているので、Discord 側だけ見て切り分けると原因特定が遅れる。
+
+DISCORD_BOT_TOKEN は echo / cat / printf で terminal に出すと iTerm2 scrollback / Alfred クリップボード履歴 / スクショに残るため、本セッションでは 4 回 rotate する事故が発生した。確立した安全手順は read -rs で受け、sed -i でその場置換、verify は sed 's|=.*|=*****|' でマスクしてから出す、unset で shell 変数からも消す、の 4 段である。channel post は @mention 必須、DM は不要という Discord 仕様も Bot が無反応で「壊れた」と疑う前に確認すべきポイントになる。
