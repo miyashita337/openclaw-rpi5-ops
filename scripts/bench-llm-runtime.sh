@@ -12,14 +12,15 @@
 
 set -euo pipefail
 
-if [[ $# -ne 3 ]]; then
-  echo "usage: $0 <runtime-name> <endpoint-url> <model-name>" >&2
+if [[ $# -lt 3 || $# -gt 4 ]]; then
+  echo "usage: $0 <runtime-name> <endpoint-url> <model-name> [system-prompt]" >&2
   exit 2
 fi
 
 RUNTIME="$1"
 URL="$2"
 MODEL="$3"
+SYSTEM_PROMPT="${4:-}"
 
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 PROMPT_DIR="$REPO_ROOT/scripts/llm-bench-prompts"
@@ -27,7 +28,7 @@ OUT_DIR="$REPO_ROOT/bench-results/$RUNTIME"
 mkdir -p "$OUT_DIR"
 
 SUMMARY="$OUT_DIR/summary.tsv"
-printf 'prompt_id\ttotal_ms\tfirst_token_ms\toutput_chars\ttok_per_sec_est\n' > "$SUMMARY"
+printf 'prompt_id\ttotal_ms\tfirst_token_ms\tcontent_chars\treasoning_chars\ttool_call\ttok_per_sec_est\n' > "$SUMMARY"
 
 for N in 1 2 3 4 5; do
   PROMPT_FILE="$PROMPT_DIR/p${N}.txt"
@@ -38,20 +39,32 @@ for N in 1 2 3 4 5; do
 
   echo "=== p$N ($RUNTIME) ===" >&2
   PROMPT_JSON=$(jq -Rs . < "$PROMPT_FILE")
-  REQ_BODY=$(jq -n \
-    --arg model "$MODEL" \
-    --argjson content "$PROMPT_JSON" \
-    '{model:$model, messages:[{role:"user", content:$content}], stream:true, max_tokens:1024}')
+  if [[ -n "$SYSTEM_PROMPT" ]]; then
+    REQ_BODY=$(jq -n \
+      --arg model "$MODEL" \
+      --arg sys "$SYSTEM_PROMPT" \
+      --argjson content "$PROMPT_JSON" \
+      '{model:$model, messages:[{role:"system", content:$sys}, {role:"user", content:$content}], stream:true, max_tokens:4096}')
+  else
+    REQ_BODY=$(jq -n \
+      --arg model "$MODEL" \
+      --argjson content "$PROMPT_JSON" \
+      '{model:$model, messages:[{role:"user", content:$content}], stream:true, max_tokens:4096}')
+  fi
 
   STREAM_OUT="$OUT_DIR/p${N}.stream.jsonl"
   TIMING_OUT="$OUT_DIR/p${N}.timing.txt"
   TEXT_OUT="$OUT_DIR/p${N}.output.txt"
+  REASON_OUT="$OUT_DIR/p${N}.reasoning.txt"
+  TOOL_OUT="$OUT_DIR/p${N}.toolcalls.json"
 
   T_START=$(date +%s%N)
-  T_FIRST=""
 
   : > "$STREAM_OUT"
   : > "$TEXT_OUT"
+  : > "$REASON_OUT"
+  : > "$TOOL_OUT"
+  rm -f "$TIMING_OUT"
 
   curl -sN "$URL/chat/completions" \
     -H "Content-Type: application/json" \
@@ -61,12 +74,15 @@ for N in 1 2 3 4 5; do
       [[ "$LINE" == "data: [DONE]" ]] && break
       LINE="${LINE#data: }"
       printf '%s\n' "$LINE" >> "$STREAM_OUT"
-      if [[ -z "$T_FIRST" ]]; then
-        T_FIRST=$(date +%s%N)
-        printf 'first_token_ns=%s\n' "$T_FIRST" > "$TIMING_OUT"
+      if [[ ! -f "$TIMING_OUT" ]]; then
+        printf 'first_token_ns=%s\n' "$(date +%s%N)" > "$TIMING_OUT"
       fi
-      DELTA=$(printf '%s' "$LINE" | jq -r '.choices[0].delta.content // empty' 2>/dev/null || true)
-      [[ -n "$DELTA" ]] && printf '%s' "$DELTA" >> "$TEXT_OUT"
+      D_CONTENT=$(printf '%s' "$LINE" | jq -r '.choices[0].delta.content // empty' 2>/dev/null || true)
+      D_REASON=$(printf '%s' "$LINE" | jq -r '.choices[0].delta.reasoning // empty' 2>/dev/null || true)
+      D_TOOL=$(printf '%s' "$LINE" | jq -c '.choices[0].delta.tool_calls // empty' 2>/dev/null || true)
+      [[ -n "$D_CONTENT" ]] && printf '%s' "$D_CONTENT" >> "$TEXT_OUT"
+      [[ -n "$D_REASON" ]]  && printf '%s' "$D_REASON"  >> "$REASON_OUT"
+      [[ -n "$D_TOOL" && "$D_TOOL" != "null" ]] && printf '%s\n' "$D_TOOL" >> "$TOOL_OUT"
     done
 
   T_END=$(date +%s%N)
@@ -77,15 +93,18 @@ for N in 1 2 3 4 5; do
   else
     FIRST_MS=0
   fi
-  CHARS=$(wc -c < "$TEXT_OUT" | tr -d ' ')
-  # Rough tok/sec: assume 1 token ~ 2.5 chars for Japanese mix; refine later from API metrics
+  C_CHARS=$(wc -c < "$TEXT_OUT" | tr -d ' ')
+  R_CHARS=$(wc -c < "$REASON_OUT" | tr -d ' ')
+  TOOL_PRESENT=0
+  [[ -s "$TOOL_OUT" ]] && TOOL_PRESENT=1
+  TOTAL_CHARS=$(( C_CHARS + R_CHARS ))
   if (( TOTAL_MS > 0 )); then
-    TOK_EST=$(awk -v c="$CHARS" -v ms="$TOTAL_MS" 'BEGIN { printf "%.1f", (c/2.5)/(ms/1000) }')
+    TOK_EST=$(awk -v c="$TOTAL_CHARS" -v ms="$TOTAL_MS" 'BEGIN { printf "%.1f", (c/2.5)/(ms/1000) }')
   else
     TOK_EST="0"
   fi
-  printf 'p%d\t%d\t%d\t%d\t%s\n' "$N" "$TOTAL_MS" "$FIRST_MS" "$CHARS" "$TOK_EST" >> "$SUMMARY"
-  printf '  total=%dms first=%dms chars=%d tok/s_est=%s\n' "$TOTAL_MS" "$FIRST_MS" "$CHARS" "$TOK_EST" >&2
+  printf 'p%d\t%d\t%d\t%d\t%d\t%d\t%s\n' "$N" "$TOTAL_MS" "$FIRST_MS" "$C_CHARS" "$R_CHARS" "$TOOL_PRESENT" "$TOK_EST" >> "$SUMMARY"
+  printf '  total=%dms first=%dms content=%d reasoning=%d tool=%d tok/s_est=%s\n' "$TOTAL_MS" "$FIRST_MS" "$C_CHARS" "$R_CHARS" "$TOOL_PRESENT" "$TOK_EST" >&2
 done
 
 echo
