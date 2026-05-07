@@ -1,0 +1,1 @@
+OpenClaw daemonにDiscord統合を追加し、4案比較の結果、RPi5が受信しWindowsへ推論をフォワードする案(D)を採用。Privileged IntentsはServer MembersとMessage Contentの両ONが必要。OpenAI認証エラーはDiscord側ではなくjournalctlで確認。トークン管理はread -rs等の4段安全手順で対応し、@mention必須等の仕様確認も重要。

@@ -1,0 +1,1 @@
+RPi5、速いけど熱持ちやすいよね。まずは `htop` で CPU 使用率とメモリ見てみよう。温度は `vcgencmd measure_temp` でチェック。もしクロック下がってたら、`cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq` で周波数を確認。冷却対策見直すと改善するかも！🎪

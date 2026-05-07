@@ -1,0 +1,6 @@
+prompt_id	total_ms	first_token_ms	eval_count	eval_duration_ms	tok_per_sec	content_chars	thinking_chars	tool_calls
+p1	61266	48684	82	12555	6.53	334	0	0
+p2	11249	613	70	10626	6.59	198	0	0
+p3	7938	794	48	7142	6.72	216	0	0
+p4	15616	1301	90	14309	6.29	393	0	0
+p5	164719	742	1032	163860	6.30	2930	0	0

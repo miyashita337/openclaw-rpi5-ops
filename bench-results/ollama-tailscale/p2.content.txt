@@ -1,0 +1,8 @@
+ツールを呼び出します。
+
+```json
+[
+  {"name": "git_status", "arguments": {"repo": "openclaw-rpi5-ops"}},
+  {"name": "file_read", "arguments": {"path": "openclaw-rpi5-ops/README.md"}}
+]
+```

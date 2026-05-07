@@ -1,0 +1,869 @@
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:55.8606894Z","message":{"role":"assistant","content":"ご"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:56.0166298Z","message":{"role":"assistant","content":"提示"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:56.1680045Z","message":{"role":"assistant","content":"いただいた"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:56.3032493Z","message":{"role":"assistant","content":"問題"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:56.4678827Z","message":{"role":"assistant","content":"について"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:56.6036107Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:56.7425802Z","message":{"role":"assistant","content":"step"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:56.8815856Z","message":{"role":"assistant","content":"-by"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:57.0173272Z","message":{"role":"assistant","content":"-step"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:57.1541784Z","message":{"role":"assistant","content":" で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:57.2952654Z","message":{"role":"assistant","content":"解"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:57.4329341Z","message":{"role":"assistant","content":"いて"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:57.5702295Z","message":{"role":"assistant","content":"いきます"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:57.7306488Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:58.0501Z","message":{"role":"assistant","content":"\n\n###"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:58.369308Z","message":{"role":"assistant","content":" 前提"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:58.5299252Z","message":{"role":"assistant","content":"データの"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:58.6965893Z","message":{"role":"assistant","content":"整理"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:59.0147611Z","message":{"role":"assistant","content":"\n*"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:59.3351548Z","message":{"role":"assistant","content":"   **"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:59.4909989Z","message":{"role":"assistant","content":"出発"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:59.6484343Z","message":{"role":"assistant","content":"時刻"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:59.8096142Z","message":{"role":"assistant","content":"**:"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:00.1274708Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:00.2893431Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:00.448761Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:00.6145836Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:00.7752581Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:01.0944096Z","message":{"role":"assistant","content":"\n*"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:01.4156041Z","message":{"role":"assistant","content":"   **"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:01.5548322Z","message":{"role":"assistant","content":"到着"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:01.6933369Z","message":{"role":"assistant","content":"時刻"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:01.8315034Z","message":{"role":"assistant","content":"**:"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:02.1120946Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:02.2495597Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:02.3858899Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:02.5299079Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:02.6688397Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:02.9456936Z","message":{"role":"assistant","content":"\n*"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:03.2340532Z","message":{"role":"assistant","content":"   **"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:03.3930434Z","message":{"role":"assistant","content":"停車"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:03.5501155Z","message":{"role":"assistant","content":"合計"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:03.7102777Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:03.8748407Z","message":{"role":"assistant","content":"**:"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:04.1928946Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:04.3601006Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:04.6883761Z","message":{"role":"assistant","content":" 分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:05.0141794Z","message":{"role":"assistant","content":"\n*"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:05.3323975Z","message":{"role":"assistant","content":"   **"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:05.4937152Z","message":{"role":"assistant","content":"走行"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:05.6512899Z","message":{"role":"assistant","content":"距離"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:05.8100819Z","message":{"role":"assistant","content":"**:"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:06.1347355Z","message":{"role":"assistant","content":" 5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:06.2955147Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:06.4545189Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:06.6124568Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:06.9273618Z","message":{"role":"assistant","content":"\n\n---"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:07.2462147Z","message":{"role":"assistant","content":"\n\n###"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:07.4027025Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:07.5618615Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:07.7239942Z","message":{"role":"assistant","content":")"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:08.0371491Z","message":{"role":"assistant","content":" 走行"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:08.1963883Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:08.3581151Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:08.5173693Z","message":{"role":"assistant","content":"停車"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:08.6738743Z","message":{"role":"assistant","content":"時間を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:08.8312305Z","message":{"role":"assistant","content":"除"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:08.9936195Z","message":{"role":"assistant","content":"く"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:09.1510982Z","message":{"role":"assistant","content":")"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:09.3106964Z","message":{"role":"assistant","content":" は"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:09.4717686Z","message":{"role":"assistant","content":"何"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:09.6302273Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:09.7881632Z","message":{"role":"assistant","content":"何"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:09.9506939Z","message":{"role":"assistant","content":"分か"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:10.1092153Z","message":{"role":"assistant","content":"?"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:10.4322599Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:10.5932516Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:10.9103644Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:11.0711224Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:11.3952294Z","message":{"role":"assistant","content":" 総"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:11.5611909Z","message":{"role":"assistant","content":"所要"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:11.7265624Z","message":{"role":"assistant","content":"時間を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:11.8883147Z","message":{"role":"assistant","content":"計算"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:12.0453366Z","message":{"role":"assistant","content":"する"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:12.2060518Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:12.5271195Z","message":{"role":"assistant","content":"\n1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:12.6903793Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:12.8509942Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:13.0082563Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:13.1666164Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:13.328545Z","message":{"role":"assistant","content":" から"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:13.6479442Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:13.8085007Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:13.969895Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:14.1295167Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:14.2879268Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:14.6083921Z","message":{"role":"assistant","content":" までの"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:14.7648398Z","message":{"role":"assistant","content":"時間を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:14.926226Z","message":{"role":"assistant","content":"求め"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:15.0863229Z","message":{"role":"assistant","content":"ます"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:15.2485595Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:15.5442546Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:15.8218614Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:15.9599822Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:16.1011446Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:16.2437755Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:16.3835984Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:16.5194745Z","message":{"role":"assistant","content":" -"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:16.7961854Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:16.9384504Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:17.0764245Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:17.2237619Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:17.3832854Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:17.5417755Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:17.8627495Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:18.0217178Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:18.1811984Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:18.3399388Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:18.5018846Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:18.6596851Z","message":{"role":"assistant","content":" }"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:18.979587Z","message":{"role":"assistant","content":" 3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:19.1380651Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:19.2975095Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:19.4587427Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:19.621737Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:19.7779218Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:19.9367817Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:20.1002654Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:20.4178409Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:20.5769631Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:20.8986495Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:21.0582963Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:21.3752543Z","message":{"role":"assistant","content":" 停車"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:21.5331642Z","message":{"role":"assistant","content":"時間を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:21.6911572Z","message":{"role":"assistant","content":"引"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:21.8503995Z","message":{"role":"assistant","content":"いて"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:22.0097967Z","message":{"role":"assistant","content":"走行"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:22.1668848Z","message":{"role":"assistant","content":"時間を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:22.3244827Z","message":{"role":"assistant","content":"求める"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:22.487371Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:22.8051544Z","message":{"role":"assistant","content":"\n総"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:22.9652686Z","message":{"role":"assistant","content":"所要"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:23.1287303Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:23.2904927Z","message":{"role":"assistant","content":"から"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:23.4592745Z","message":{"role":"assistant","content":"停車"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:23.6160338Z","message":{"role":"assistant","content":"合計"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:23.7554224Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:23.8987606Z","message":{"role":"assistant","content":"（"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:24.0406361Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:24.1843776Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:24.3214307Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:24.45869Z","message":{"role":"assistant","content":"）"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:24.5994251Z","message":{"role":"assistant","content":"を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:24.7400592Z","message":{"role":"assistant","content":"引"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:24.8770514Z","message":{"role":"assistant","content":"きます"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:25.0162526Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:25.2936576Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:25.6095903Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:25.7694343Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:25.9276514Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:26.0894786Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:26.25424Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:26.4148308Z","message":{"role":"assistant","content":" }"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:26.7332015Z","message":{"role":"assistant","content":" 3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:26.8948639Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:27.0528455Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:27.2132699Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:27.3731712Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:27.533767Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:27.6912931Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:27.8504835Z","message":{"role":"assistant","content":" -"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:28.1686164Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:28.3270811Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:28.4860032Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:28.6452085Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:28.8065936Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:28.9470074Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:29.0850287Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:29.2233958Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:29.4992401Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:29.6382024Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:29.7806469Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:29.9158187Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:30.0552643Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:30.1935049Z","message":{"role":"assistant","content":" }"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:30.4737386Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:30.613907Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:30.7729791Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:30.9334278Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:31.0928381Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:31.2561228Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:31.4178119Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:31.5770554Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:31.8956103Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:32.0559394Z","message":{"role":"assistant","content":"答え"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:32.2146277Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:32.3780933Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:32.5402422Z","message":{"role":"assistant","content":")**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:32.6987302Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:32.8570128Z","message":{"role":"assistant","content":" **"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:33.0166868Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:33.1763727Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:33.3355031Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:33.502243Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:33.6627352Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:33.8203097Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:34.1386668Z","message":{"role":"assistant","content":"\n\n---"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:34.4636097Z","message":{"role":"assistant","content":"\n\n###"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:34.6237016Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:34.78317Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:34.9406399Z","message":{"role":"assistant","content":")"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:35.2636485Z","message":{"role":"assistant","content":" 平均"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:35.4262893Z","message":{"role":"assistant","content":"走行"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:35.5858329Z","message":{"role":"assistant","content":"速度"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:35.7479879Z","message":{"role":"assistant","content":"は"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:35.9096639Z","message":{"role":"assistant","content":"時"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:36.0678293Z","message":{"role":"assistant","content":"速"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:36.2260541Z","message":{"role":"assistant","content":"何"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:36.3869015Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:36.55338Z","message":{"role":"assistant","content":" か"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:36.7153658Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:36.8793203Z","message":{"role":"assistant","content":"小数"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:37.0420071Z","message":{"role":"assistant","content":"点"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:37.2062623Z","message":{"role":"assistant","content":"第"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:37.5368294Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:37.8835029Z","message":{"role":"assistant","content":" 位"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:38.0486066Z","message":{"role":"assistant","content":"まで"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:38.2209411Z","message":{"role":"assistant","content":")?"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:38.5516893Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:38.7186897Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:39.0550324Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:39.2176127Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:39.5385415Z","message":{"role":"assistant","content":" 走行"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:39.7024402Z","message":{"role":"assistant","content":"時間を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:39.8655981Z","message":{"role":"assistant","content":"「"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:40.0254538Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:40.1888212Z","message":{"role":"assistant","content":"」"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:40.3493039Z","message":{"role":"assistant","content":"単位"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:40.5088449Z","message":{"role":"assistant","content":"に変"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:40.6751976Z","message":{"role":"assistant","content":"換"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:40.8440617Z","message":{"role":"assistant","content":"する"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:41.009018Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:41.3296556Z","message":{"role":"assistant","content":"\n("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:41.4899862Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:41.6480945Z","message":{"role":"assistant","content":")"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:41.8087832Z","message":{"role":"assistant","content":" で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:41.9667927Z","message":{"role":"assistant","content":"求め"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:42.1317166Z","message":{"role":"assistant","content":"た"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:42.2905528Z","message":{"role":"assistant","content":"走行"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:42.4516239Z","message":{"role":"assistant","content":"時間は"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:42.6130666Z","message":{"role":"assistant","content":"「"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:42.772979Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:42.9353135Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:43.0964516Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:43.2576681Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:43.418117Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:43.578822Z","message":{"role":"assistant","content":"」"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:43.7401868Z","message":{"role":"assistant","content":"です"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:43.8977491Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:44.2221859Z","message":{"role":"assistant","content":"\n1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:44.3846192Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:44.5435255Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:44.7049183Z","message":{"role":"assistant","content":"は"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:44.8661441Z","message":{"role":"assistant","content":" $\\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:45.0253852Z","message":{"role":"assistant","content":"frac"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:45.1845937Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:45.3452967Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:45.509545Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:45.6683487Z","message":{"role":"assistant","content":"}{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:45.8296372Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:45.9916679Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:46.1518953Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:46.3111596Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:46.6438367Z","message":{"role":"assistant","content":" 0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:46.8053432Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:46.9685069Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:47.1348068Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:47.299737Z","message":{"role":"assistant","content":"$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:47.629031Z","message":{"role":"assistant","content":" 時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:47.7905712Z","message":{"role":"assistant","content":" なので"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:47.9498738Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:48.2844218Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:48.6139278Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:48.7771307Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:48.9360495Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:49.0963516Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:49.2572229Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:49.421242Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:49.5806222Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:49.7399374Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:49.9005685Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:50.0609492Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:50.3813459Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:50.546681Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:50.8659702Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:51.0262736Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:51.3527934Z","message":{"role":"assistant","content":" 平均"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:51.5162303Z","message":{"role":"assistant","content":"走行"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:51.6785497Z","message":{"role":"assistant","content":"速度"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:51.8373357Z","message":{"role":"assistant","content":"を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:51.9987979Z","message":{"role":"assistant","content":"計算"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:52.1598092Z","message":{"role":"assistant","content":"する"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:52.3236754Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:52.6454077Z","message":{"role":"assistant","content":"\n平均"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:52.8079798Z","message":{"role":"assistant","content":"速度"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:52.9662742Z","message":{"role":"assistant","content":" $"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:53.1251707Z","message":{"role":"assistant","content":"v"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:53.286927Z","message":{"role":"assistant","content":"$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:53.450241Z","message":{"role":"assistant","content":" は"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:53.60896Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:53.7771402Z","message":{"role":"assistant","content":"距離"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:53.9397987Z","message":{"role":"assistant","content":" $"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:54.0997037Z","message":{"role":"assistant","content":"d"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:54.2601141Z","message":{"role":"assistant","content":"$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:54.4259893Z","message":{"role":"assistant","content":" を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:54.5842444Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:54.7428886Z","message":{"role":"assistant","content":" $"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:54.9045618Z","message":{"role":"assistant","content":"t"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:55.0702172Z","message":{"role":"assistant","content":"$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:55.2337659Z","message":{"role":"assistant","content":" で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:55.3957334Z","message":{"role":"assistant","content":"割"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:55.556128Z","message":{"role":"assistant","content":"った"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:55.7146764Z","message":{"role":"assistant","content":"値"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:55.8734457Z","message":{"role":"assistant","content":"です"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:56.0372275Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:56.3617474Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:56.524469Z","message":{"role":"assistant","content":" v"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:56.6886229Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:56.8488231Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:57.0070838Z","message":{"role":"assistant","content":"frac"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:57.1678258Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:57.3273956Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:57.4892992Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:57.6485752Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:57.8089443Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:57.9704089Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:58.1275195Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:58.2919277Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:58.4547696Z","message":{"role":"assistant","content":"}}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:58.6237051Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:58.7947838Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:58.956545Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:59.1167544Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:59.2751728Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:59.43729Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:59.597525Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:32:59.7594886Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:00.0836175Z","message":{"role":"assistant","content":" 時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:00.2416389Z","message":{"role":"assistant","content":"}}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:00.4021587Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:00.6809282Z","message":{"role":"assistant","content":"\n\n計算"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:00.8178445Z","message":{"role":"assistant","content":"を行います"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:00.9559857Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:01.24196Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:01.5191793Z","message":{"role":"assistant","content":" 5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:01.6596464Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:01.7999264Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:01.93556Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:02.076224Z","message":{"role":"assistant","content":"div"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:02.3914924Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:02.5507405Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:02.7089243Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:02.870878Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:03.030827Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:03.3549183Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:03.515561Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:03.6760317Z","message":{"role":"assistant","content":"8"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:03.836743Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:03.9963112Z","message":{"role":"assistant","content":"8"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:04.1549483Z","message":{"role":"assistant","content":"8"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:04.311382Z","message":{"role":"assistant","content":"8"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:04.4767535Z","message":{"role":"assistant","content":"..."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:04.6413706Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:04.9592355Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:05.1236501Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:05.4461911Z","message":{"role":"assistant","content":" 3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:05.6081044Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:05.9278725Z","message":{"role":"assistant","content":" 小数"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:06.0868766Z","message":{"role":"assistant","content":"点"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:06.2471067Z","message":{"role":"assistant","content":"第"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:06.5637038Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:06.8850867Z","message":{"role":"assistant","content":" 位"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:07.0416986Z","message":{"role":"assistant","content":"まで"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:07.2012628Z","message":{"role":"assistant","content":"で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:07.3424748Z","message":{"role":"assistant","content":"丸"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:07.4888406Z","message":{"role":"assistant","content":"める"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:07.6253699Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:07.9076183Z","message":{"role":"assistant","content":"\n小数"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:08.049208Z","message":{"role":"assistant","content":"点"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:08.1879493Z","message":{"role":"assistant","content":"第"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:08.4729978Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:08.7507243Z","message":{"role":"assistant","content":" 位"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:08.891477Z","message":{"role":"assistant","content":"が"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:09.2130611Z","message":{"role":"assistant","content":" 8"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:09.3717553Z","message":{"role":"assistant","content":" なので"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:09.5430021Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:09.7155279Z","message":{"role":"assistant","content":"切り"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:09.8784546Z","message":{"role":"assistant","content":"上げ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:10.0400398Z","message":{"role":"assistant","content":"ます"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:10.2015501Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:10.5201763Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:10.8441997Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:11.0032379Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:11.1616508Z","message":{"role":"assistant","content":"8"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:11.3249577Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:11.4833677Z","message":{"role":"assistant","content":"9"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:11.6418906Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:11.8010736Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:11.9623852Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:12.1226397Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:12.2874704Z","message":{"role":"assistant","content":"/h"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:12.4482843Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:12.6139945Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:12.9588096Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:13.1123826Z","message":{"role":"assistant","content":"答え"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:13.2571073Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:13.4051384Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:13.5519955Z","message":{"role":"assistant","content":")**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:13.6977906Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:13.8425424Z","message":{"role":"assistant","content":" **"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:13.9892124Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:14.131779Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:14.2687254Z","message":{"role":"assistant","content":"8"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:14.4093729Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:14.5496443Z","message":{"role":"assistant","content":"9"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:14.6919906Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:14.8290481Z","message":{"role":"assistant","content":"/h"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:14.9656251Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:15.2488565Z","message":{"role":"assistant","content":"\n\n---"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:15.5683934Z","message":{"role":"assistant","content":"\n\n###"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:15.7334734Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:15.9004678Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:16.0607496Z","message":{"role":"assistant","content":")"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:16.220938Z","message":{"role":"assistant","content":" もし"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:16.3806876Z","message":{"role":"assistant","content":"停車"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:16.5464943Z","message":{"role":"assistant","content":"時間が"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:16.8698361Z","message":{"role":"assistant","content":" 0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:17.1949465Z","message":{"role":"assistant","content":" 分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:17.3529251Z","message":{"role":"assistant","content":"だった"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:17.515003Z","message":{"role":"assistant","content":"場合"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:17.6740967Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:17.8375538Z","message":{"role":"assistant","content":"平均"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:18.0117846Z","message":{"role":"assistant","content":"速度"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:18.1778671Z","message":{"role":"assistant","content":"は"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:18.3425581Z","message":{"role":"assistant","content":"時"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:18.5051261Z","message":{"role":"assistant","content":"速"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:18.6682137Z","message":{"role":"assistant","content":"何"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:18.8352096Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:19.1552313Z","message":{"role":"assistant","content":" になる"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:19.314738Z","message":{"role":"assistant","content":"か"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:19.4757449Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:19.6353729Z","message":{"role":"assistant","content":"小数"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:19.7947255Z","message":{"role":"assistant","content":"点"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:19.9528059Z","message":{"role":"assistant","content":"第"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:20.2709887Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:20.5935003Z","message":{"role":"assistant","content":" 位"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:20.7306591Z","message":{"role":"assistant","content":"まで"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:20.8734828Z","message":{"role":"assistant","content":")?"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:21.1570406Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:21.2981451Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:21.5793641Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:21.7177455Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:21.9967618Z","message":{"role":"assistant","content":" 停車"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:22.13492Z","message":{"role":"assistant","content":"時間が"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:22.2723963Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:22.4290556Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:22.5954723Z","message":{"role":"assistant","content":"の場合"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:22.7527914Z","message":{"role":"assistant","content":"の"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:22.9117828Z","message":{"role":"assistant","content":"走行"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:23.0729014Z","message":{"role":"assistant","content":"時間を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:23.2369832Z","message":{"role":"assistant","content":"確定"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:23.3974155Z","message":{"role":"assistant","content":"する"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:23.5592967Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:23.883244Z","message":{"role":"assistant","content":"\n停車"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:24.0435076Z","message":{"role":"assistant","content":"時間が"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:24.207859Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:24.3691822Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:24.5288516Z","message":{"role":"assistant","content":"ということは"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:24.6897609Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:24.8507006Z","message":{"role":"assistant","content":"総"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:25.0087404Z","message":{"role":"assistant","content":"所要"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:25.1679445Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:25.3293128Z","message":{"role":"assistant","content":"すべて"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:25.4904109Z","message":{"role":"assistant","content":"が"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:25.6487825Z","message":{"role":"assistant","content":"走行"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:25.8108788Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:25.9728336Z","message":{"role":"assistant","content":"になります"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:26.1344047Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:26.4574753Z","message":{"role":"assistant","content":"\n総"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:26.6216126Z","message":{"role":"assistant","content":"所要"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:26.780386Z","message":{"role":"assistant","content":"時間は"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:26.9401056Z","message":{"role":"assistant","content":" **"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:27.1032106Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:27.2628034Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:27.4213867Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:27.5860777Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:27.7437591Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:27.9022518Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:28.0623227Z","message":{"role":"assistant","content":" です"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:28.2265397Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:28.5453445Z","message":{"role":"assistant","content":"\nこれを"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:28.7081553Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:28.8707138Z","message":{"role":"assistant","content":"単位"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:29.0289989Z","message":{"role":"assistant","content":"に"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:29.191105Z","message":{"role":"assistant","content":"直"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:29.3513062Z","message":{"role":"assistant","content":"すと"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:29.5102853Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:29.8309983Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:30.1512209Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:30.3104857Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:30.4717301Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:30.6305125Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:30.7878043Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:30.932315Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:31.0759339Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:31.2156523Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:31.3542485Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:31.6405351Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:31.7796418Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:32.0580323Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:32.198495Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:32.4778628Z","message":{"role":"assistant","content":" 平均"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:32.6421926Z","message":{"role":"assistant","content":"速度"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:32.8052387Z","message":{"role":"assistant","content":"を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:32.9639112Z","message":{"role":"assistant","content":"計算"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:33.1272122Z","message":{"role":"assistant","content":"する"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:33.2921003Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:33.6144811Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:33.7836652Z","message":{"role":"assistant","content":" v"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:33.9444563Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:34.1054895Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:34.2693124Z","message":{"role":"assistant","content":"frac"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:34.4334091Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:34.5913819Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:34.7557853Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:34.916486Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:35.0774432Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:35.2407057Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:35.4071676Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:35.5683932Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:35.726513Z","message":{"role":"assistant","content":"}}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:35.888935Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:36.0507919Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:36.2118707Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:36.3706901Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:36.5313555Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:36.6931322Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:36.8514588Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:37.1734322Z","message":{"role":"assistant","content":" 時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:37.3327819Z","message":{"role":"assistant","content":"}}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:37.492051Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:37.8194186Z","message":{"role":"assistant","content":"\n\n計算"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:37.9781414Z","message":{"role":"assistant","content":"を行います"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:38.1353383Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:38.4611311Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:38.7852494Z","message":{"role":"assistant","content":" 5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:38.9485184Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:39.1078857Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:39.2679516Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:39.4293114Z","message":{"role":"assistant","content":"div"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:39.7553114Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:39.916288Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:40.0806806Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:40.2401883Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:40.5618408Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:40.719259Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:40.8798526Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:41.043431Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:41.3680352Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:41.5278773Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:41.8578526Z","message":{"role":"assistant","content":" 3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:42.0197727Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:42.3428137Z","message":{"role":"assistant","content":" 形式"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:42.5019171Z","message":{"role":"assistant","content":"を整"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:42.6613908Z","message":{"role":"assistant","content":"える"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:42.8222752Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:43.142123Z","message":{"role":"assistant","content":"\n小数"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:43.3053277Z","message":{"role":"assistant","content":"点"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:43.4682527Z","message":{"role":"assistant","content":"第"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:43.7860961Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:44.1055454Z","message":{"role":"assistant","content":" 位"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:44.2656128Z","message":{"role":"assistant","content":"まで"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:44.4296416Z","message":{"role":"assistant","content":"という"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:44.5953915Z","message":{"role":"assistant","content":"指示"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:44.7521558Z","message":{"role":"assistant","content":"なので"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:44.9123757Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:45.2350832Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:45.5569508Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:45.7185642Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:45.8791555Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:46.0413706Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:46.2021024Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:46.3612748Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:46.5209427Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:46.6850222Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:46.8510618Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:47.0095977Z","message":{"role":"assistant","content":"/h"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:47.1707369Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:47.3319392Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:47.6470884Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:47.8181119Z","message":{"role":"assistant","content":"答え"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:47.9782595Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:48.1385685Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:48.2983007Z","message":{"role":"assistant","content":")**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:48.4614716Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:48.6221708Z","message":{"role":"assistant","content":" **"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:48.7820429Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:48.9432673Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:49.1039566Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:49.2662595Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:49.4281572Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:49.5892037Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:49.7262189Z","message":{"role":"assistant","content":"/h"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:49.8655868Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:50.1510982Z","message":{"role":"assistant","content":"\n\n---"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:50.4338243Z","message":{"role":"assistant","content":"\n\n###"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:50.5776327Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:50.7219442Z","message":{"role":"assistant","content":"4"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:50.8632009Z","message":{"role":"assistant","content":")"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:51.1409448Z","message":{"role":"assistant","content":" 平均"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:51.280878Z","message":{"role":"assistant","content":"速度"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:51.4432252Z","message":{"role":"assistant","content":"を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:51.60723Z","message":{"role":"assistant","content":"時"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:51.7682755Z","message":{"role":"assistant","content":"速"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:52.0904512Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:52.2600958Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:52.4244398Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:52.5857769Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:52.912066Z","message":{"role":"assistant","content":" まで"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:53.0739201Z","message":{"role":"assistant","content":"上げた"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:53.2361648Z","message":{"role":"assistant","content":"場合"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:53.405686Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:53.5716432Z","message":{"role":"assistant","content":"東京"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:53.7449597Z","message":{"role":"assistant","content":"-"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:53.9133953Z","message":{"role":"assistant","content":"新"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:54.0743875Z","message":{"role":"assistant","content":"大阪"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:54.2341677Z","message":{"role":"assistant","content":"間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:54.415964Z","message":{"role":"assistant","content":"を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:54.5906668Z","message":{"role":"assistant","content":"停車"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:54.7605924Z","message":{"role":"assistant","content":"なし"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:54.9387611Z","message":{"role":"assistant","content":"で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:55.1105389Z","message":{"role":"assistant","content":"走"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:55.2803785Z","message":{"role":"assistant","content":"破"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:55.4496216Z","message":{"role":"assistant","content":"するのに"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:55.6164529Z","message":{"role":"assistant","content":"何"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:55.7877118Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:55.9641524Z","message":{"role":"assistant","content":"かかる"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:56.1410229Z","message":{"role":"assistant","content":"か"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:56.3127392Z","message":{"role":"assistant","content":"?"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:56.6521018Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:56.8178962Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:57.1429011Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:57.3094921Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:57.6694877Z","message":{"role":"assistant","content":" 必要な"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:57.8441952Z","message":{"role":"assistant","content":"時間を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:58.0095651Z","message":{"role":"assistant","content":"「"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:58.1744484Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:58.3382771Z","message":{"role":"assistant","content":"」"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:58.5048438Z","message":{"role":"assistant","content":"単位"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:58.6759275Z","message":{"role":"assistant","content":"で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:58.841868Z","message":{"role":"assistant","content":"計算"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:59.0127042Z","message":{"role":"assistant","content":"する"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:59.1771623Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:59.5006727Z","message":{"role":"assistant","content":"\n速度"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:59.6660188Z","message":{"role":"assistant","content":" $"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:59.8287013Z","message":{"role":"assistant","content":"v"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:33:59.9924572Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:00.3206386Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:00.4843765Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:00.6493802Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:00.812821Z","message":{"role":"assistant","content":"$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:00.9720176Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:01.1382027Z","message":{"role":"assistant","content":"/h"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:01.3008322Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:01.4641477Z","message":{"role":"assistant","content":"距離"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:01.627172Z","message":{"role":"assistant","content":" $"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:01.7874706Z","message":{"role":"assistant","content":"d"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:01.9499249Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:02.2755692Z","message":{"role":"assistant","content":" 5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:02.4434111Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:02.6074415Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:02.766187Z","message":{"role":"assistant","content":"$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:02.9303495Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:03.0917203Z","message":{"role":"assistant","content":" の"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:03.2507478Z","message":{"role":"assistant","content":"とき"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:03.4139311Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:03.5771567Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:03.7403615Z","message":{"role":"assistant","content":" $"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:03.9035939Z","message":{"role":"assistant","content":"t"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:04.0641386Z","message":{"role":"assistant","content":"$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:04.2260805Z","message":{"role":"assistant","content":" は"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:04.3851894Z","message":{"role":"assistant","content":"以下の"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:04.5498674Z","message":{"role":"assistant","content":"式"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:04.7101898Z","message":{"role":"assistant","content":"で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:04.8754647Z","message":{"role":"assistant","content":"求め"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:05.0396796Z","message":{"role":"assistant","content":"られます"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:05.1996406Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:05.5259701Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:05.6955281Z","message":{"role":"assistant","content":" t"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:05.8607788Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:06.0214721Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:06.1847819Z","message":{"role":"assistant","content":"frac"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:06.3521631Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:06.5121422Z","message":{"role":"assistant","content":"d"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:06.6702648Z","message":{"role":"assistant","content":"}{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:06.8311079Z","message":{"role":"assistant","content":"v"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:06.9942959Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:07.1527965Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:07.3128879Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:07.4727065Z","message":{"role":"assistant","content":"frac"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:07.6336602Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:07.7936407Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:07.951858Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:08.1178719Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:08.277142Z","message":{"role":"assistant","content":"}{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:08.4373178Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:08.5994085Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:08.7630294Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:08.9216056Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:09.0827358Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:09.2451079Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:09.4044018Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:09.7295337Z","message":{"role":"assistant","content":" 時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:09.8928181Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:10.0575239Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:10.3790618Z","message":{"role":"assistant","content":"\n\n計算"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:10.5443452Z","message":{"role":"assistant","content":"を行います"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:10.7069625Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:11.0349572Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:11.352144Z","message":{"role":"assistant","content":" 5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:11.5142486Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:11.6755864Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:11.8334532Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:11.9975388Z","message":{"role":"assistant","content":"div"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:12.3222705Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:12.4865635Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:12.6503691Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:12.8184342Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:13.1564164Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:13.3187487Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:13.4785978Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:13.6384847Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:13.8013254Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:13.9638645Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:14.1270238Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:14.4562183Z","message":{"role":"assistant","content":" 時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:14.6167285Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:14.7809333Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:15.1043942Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:15.2656291Z","message":{"role":"assistant","content":"ステップ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:15.590125Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:15.7664321Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:16.1039577Z","message":{"role":"assistant","content":" 時間を"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:16.2679415Z","message":{"role":"assistant","content":"「"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:16.4272048Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:16.5908164Z","message":{"role":"assistant","content":"」"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:16.7501735Z","message":{"role":"assistant","content":"単位"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:16.909974Z","message":{"role":"assistant","content":"に変"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:17.0724765Z","message":{"role":"assistant","content":"換"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:17.2382526Z","message":{"role":"assistant","content":"する"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:17.3975705Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:17.7337378Z","message":{"role":"assistant","content":"\n1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:17.8951656Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:18.0578382Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:18.3862867Z","message":{"role":"assistant","content":" 6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:18.5487507Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:18.7139669Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:18.8873771Z","message":{"role":"assistant","content":" なので"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:19.0472061Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:19.3749336Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:19.7025353Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:19.8670693Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:20.030444Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:20.1919733Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:20.3530472Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:20.5186436Z","message":{"role":"assistant","content":"times"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:20.8399391Z","message":{"role":"assistant","content":" 6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:21.001479Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:21.166226Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:21.3257887Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:21.4878813Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:21.8217726Z","message":{"role":"assistant","content":" 分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:21.9845675Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:22.1494262Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:22.4759711Z","message":{"role":"assistant","content":"\n\n計算"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:22.6396264Z","message":{"role":"assistant","content":"を行います"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:22.8016803Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:23.1233261Z","message":{"role":"assistant","content":"\n$$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:23.452791Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:23.6172156Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:23.7773639Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:23.9450501Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:24.1066674Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:24.2659393Z","message":{"role":"assistant","content":"times"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:24.5956545Z","message":{"role":"assistant","content":" 6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:24.7665677Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:24.9397455Z","message":{"role":"assistant","content":" ="},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:25.2661175Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:25.4247416Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:25.5870633Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:25.7463376Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:25.905505Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:26.0726008Z","message":{"role":"assistant","content":" \\"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:26.2326833Z","message":{"role":"assistant","content":"text"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:26.3914781Z","message":{"role":"assistant","content":"{"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:26.7185925Z","message":{"role":"assistant","content":" 分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:26.8763317Z","message":{"role":"assistant","content":"}"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:27.0346352Z","message":{"role":"assistant","content":" $$"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:27.3620096Z","message":{"role":"assistant","content":"\n\n**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:27.5200156Z","message":{"role":"assistant","content":"答え"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:27.6909087Z","message":{"role":"assistant","content":" ("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:27.8614779Z","message":{"role":"assistant","content":"4"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:28.0237805Z","message":{"role":"assistant","content":")**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:28.1853644Z","message":{"role":"assistant","content":":"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:28.3497644Z","message":{"role":"assistant","content":" **"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:28.5124851Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:28.6797015Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:28.8435536Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:29.0043715Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:29.1670146Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:29.499929Z","message":{"role":"assistant","content":" 分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:29.6635645Z","message":{"role":"assistant","content":"**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:29.9868484Z","message":{"role":"assistant","content":"\n\n---"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:30.3106663Z","message":{"role":"assistant","content":"\n\n###"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:30.6357853Z","message":{"role":"assistant","content":" 最終"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:30.8091675Z","message":{"role":"assistant","content":"回答"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:30.9792022Z","message":{"role":"assistant","content":"まとめ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:31.3180471Z","message":{"role":"assistant","content":"\n\n*"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:31.6435545Z","message":{"role":"assistant","content":"   **("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:31.8113605Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:31.9737948Z","message":{"role":"assistant","content":")**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:32.3091956Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:32.4715762Z","message":{"role":"assistant","content":"時間"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:32.6322525Z","message":{"role":"assistant","content":"1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:32.7985039Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:32.9628862Z","message":{"role":"assistant","content":"分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:33.285336Z","message":{"role":"assistant","content":"\n*"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:33.6112132Z","message":{"role":"assistant","content":"   **("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:33.7801169Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:33.957035Z","message":{"role":"assistant","content":")**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:34.2878696Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:34.4490191Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:34.6096975Z","message":{"role":"assistant","content":"8"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:34.7686674Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:34.9278692Z","message":{"role":"assistant","content":"9"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:35.0942362Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:35.2589566Z","message":{"role":"assistant","content":"/h"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:35.5800357Z","message":{"role":"assistant","content":"\n*"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:35.9038689Z","message":{"role":"assistant","content":"   **("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:36.0672807Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:36.2307Z","message":{"role":"assistant","content":")**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:36.5530731Z","message":{"role":"assistant","content":" 2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:36.7153191Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:36.8823264Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:37.0403682Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:37.2018858Z","message":{"role":"assistant","content":"0"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:37.3690851Z","message":{"role":"assistant","content":" km"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:37.5311243Z","message":{"role":"assistant","content":"/h"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:37.8522305Z","message":{"role":"assistant","content":"\n*"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:38.1747552Z","message":{"role":"assistant","content":"   **("},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:38.3327231Z","message":{"role":"assistant","content":"4"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:38.4939454Z","message":{"role":"assistant","content":")**"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:38.8136566Z","message":{"role":"assistant","content":" 1"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:38.9729589Z","message":{"role":"assistant","content":"2"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:39.1171891Z","message":{"role":"assistant","content":"3"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:39.2568622Z","message":{"role":"assistant","content":"."},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:39.3970871Z","message":{"role":"assistant","content":"6"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:39.6839462Z","message":{"role":"assistant","content":" 分"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:34:39.8378376Z","message":{"role":"assistant","content":""},"done":true,"done_reason":"stop","total_duration":164691514500,"load_duration":149185000,"prompt_eval_count":226,"prompt_eval_duration":560665800,"eval_count":1032,"eval_duration":163860435200}

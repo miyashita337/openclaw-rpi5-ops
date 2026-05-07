@@ -1,0 +1,79 @@
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:07.7157758Z","message":{"role":"assistant","content":"RP"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:07.865794Z","message":{"role":"assistant","content":"i"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:08.0084315Z","message":{"role":"assistant","content":"5"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:08.1521659Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:08.2905881Z","message":{"role":"assistant","content":"速"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:08.4375156Z","message":{"role":"assistant","content":"い"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:08.5770065Z","message":{"role":"assistant","content":"けど"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:08.7192717Z","message":{"role":"assistant","content":"熱"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:08.860038Z","message":{"role":"assistant","content":"持ち"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:09.0066902Z","message":{"role":"assistant","content":"やすい"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:09.1455807Z","message":{"role":"assistant","content":"よね"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:09.295095Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:09.4630091Z","message":{"role":"assistant","content":"まずは"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:09.6381355Z","message":{"role":"assistant","content":" `"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:09.8127958Z","message":{"role":"assistant","content":"ht"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:09.9901807Z","message":{"role":"assistant","content":"op"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:10.1600836Z","message":{"role":"assistant","content":"`"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:10.3322596Z","message":{"role":"assistant","content":" で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:10.4902251Z","message":{"role":"assistant","content":" CPU"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:10.805411Z","message":{"role":"assistant","content":" 使用"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:10.9650792Z","message":{"role":"assistant","content":"率"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:11.1177745Z","message":{"role":"assistant","content":"と"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:11.2773633Z","message":{"role":"assistant","content":"メモリ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:11.4361319Z","message":{"role":"assistant","content":"見て"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:11.59264Z","message":{"role":"assistant","content":"みよう"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:11.7513186Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:11.9072429Z","message":{"role":"assistant","content":"温度"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:12.0700317Z","message":{"role":"assistant","content":"は"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:12.2266068Z","message":{"role":"assistant","content":" `"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:12.3838881Z","message":{"role":"assistant","content":"vc"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:12.5398905Z","message":{"role":"assistant","content":"g"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:12.6982869Z","message":{"role":"assistant","content":"enc"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:12.8550173Z","message":{"role":"assistant","content":"md"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:13.011422Z","message":{"role":"assistant","content":" measure"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:13.1671216Z","message":{"role":"assistant","content":"_temp"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:13.3233665Z","message":{"role":"assistant","content":"`"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:13.4782429Z","message":{"role":"assistant","content":" で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:13.6372654Z","message":{"role":"assistant","content":"チェック"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:13.7969036Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:13.9511512Z","message":{"role":"assistant","content":"もし"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:14.1059917Z","message":{"role":"assistant","content":"クロ"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:14.2618203Z","message":{"role":"assistant","content":"ック"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:14.4214398Z","message":{"role":"assistant","content":"下が"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:14.5777962Z","message":{"role":"assistant","content":"って"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:14.7364723Z","message":{"role":"assistant","content":"たら"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:14.8938261Z","message":{"role":"assistant","content":"、"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:15.0512757Z","message":{"role":"assistant","content":"`"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:15.2103558Z","message":{"role":"assistant","content":"cat"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:15.3696906Z","message":{"role":"assistant","content":" /"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:15.5273615Z","message":{"role":"assistant","content":"sys"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:15.6837873Z","message":{"role":"assistant","content":"/devices"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:15.8410456Z","message":{"role":"assistant","content":"/system"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:15.9976126Z","message":{"role":"assistant","content":"/cpu"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:16.1543667Z","message":{"role":"assistant","content":"/cpu"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:16.3097711Z","message":{"role":"assistant","content":"*/"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:16.4665593Z","message":{"role":"assistant","content":"cp"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:16.6241666Z","message":{"role":"assistant","content":"ufreq"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:16.7793789Z","message":{"role":"assistant","content":"/sc"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:16.9348162Z","message":{"role":"assistant","content":"aling"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:17.0907884Z","message":{"role":"assistant","content":"_cur"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:17.2490132Z","message":{"role":"assistant","content":"_freq"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:17.4054369Z","message":{"role":"assistant","content":"`"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:17.5704125Z","message":{"role":"assistant","content":" で"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:17.7272241Z","message":{"role":"assistant","content":"周"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:17.8819109Z","message":{"role":"assistant","content":"波"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:18.0365155Z","message":{"role":"assistant","content":"数"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:18.1949882Z","message":{"role":"assistant","content":"を確認"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:18.3578724Z","message":{"role":"assistant","content":"。"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:18.5121629Z","message":{"role":"assistant","content":"冷却"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:18.6698044Z","message":{"role":"assistant","content":"対策"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:18.829979Z","message":{"role":"assistant","content":"見"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:18.9856574Z","message":{"role":"assistant","content":"直"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:19.1452871Z","message":{"role":"assistant","content":"すと"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:19.301537Z","message":{"role":"assistant","content":"改善"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:19.458676Z","message":{"role":"assistant","content":"する"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:19.6150123Z","message":{"role":"assistant","content":"かも"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:19.7524574Z","message":{"role":"assistant","content":"！"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:20.1628379Z","message":{"role":"assistant","content":"🎪"},"done":false}
+{"model":"qwen3.6:27b","created_at":"2026-05-07T07:31:20.2999639Z","message":{"role":"assistant","content":""},"done":true,"done_reason":"stop","total_duration":61234242600,"load_duration":48053145700,"prompt_eval_count":73,"prompt_eval_duration":539107700,"eval_count":82,"eval_duration":12555292300}
