@@ -1,0 +1,49 @@
+[Unit]
+Description=Discord ↔ Ollama bridge bot (forward-only, no agentic features)
+Documentation=https://github.com/miyashita337/openclaw-rpi5-ops
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/discord-ollama-bridge/.venv/bin/python /opt/discord-ollama-bridge/discord-ollama-bridge.py
+Restart=on-failure
+RestartSec=10s
+
+User=discord-bridge
+Group=discord-bridge
+EnvironmentFile=/etc/discord-ollama-bridge/env
+WorkingDirectory=/var/lib/discord-ollama-bridge
+
+# === hardening Tier A (OS isolation) ===
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+LockPersonality=yes
+RestrictSUIDSGID=yes
+RemoveIPC=yes
+RestrictNamespaces=yes
+RestrictRealtime=yes
+SystemCallArchitectures=native
+ReadWritePaths=/var/lib/discord-ollama-bridge
+PrivateTmp=yes
+
+# === hardening Tier B (capabilities + clock/host/proc) ===
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+ProtectClock=yes
+ProtectHostname=yes
+ProtectProc=invisible
+ProcSubset=pid
+PrivateDevices=yes
+PrivateUsers=no
+KeyringMode=private
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
