@@ -69,7 +69,7 @@ async def query_ollama(prompt: str) -> str:
                 "messages": [{"role": "user", "content": prompt}],
                 "stream": False,
                 "think": False,
-                "options": {"num_predict": 4096},
+                "options": {"num_predict": 512},
             },
         )
         resp.raise_for_status()
