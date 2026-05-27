@@ -46,7 +46,7 @@
 
 | § | 章タイトル (仮) | 字数目安 | 主な素材 |
 |---|---|---|---|
-| 1 | プロローグ: OpenAI 値上げ、自衛の必要 | 400 | コスト試算の触り |
+| 1 | プロローグ: AI サービス値上げの三波、自衛の必要 | 400 | 値上げエビデンス 3 件 (Cursor / Anthropic Max / OpenAI Teams) + コスト試算の触り |
 | 2 | 答え先出し (1 段落) | 200 | 結論ダイジェスト |
 | 3 | 全体構成図 (Win Tower / Discord / Ollama / OpenClaw) | 500 | 画像 1: Mermaid 構成図 |
 | 4 | ハード選定: なぜ 4070 Ti SUPER 16GB か + 実測表 | 1,000 | 画像 2: nvidia-smi 27B 動作中、画像 3: ollama ps の GPU/CPU split、ベンチ表 |
@@ -76,6 +76,26 @@
 | 7 | `~/.openclaw/workspace/memory/heartbeat-log.md` 抜粋 | テキスト or スクショ | 未取得 |
 
 ### 引用ソース
+
+#### §1 プロローグ用: AI サービス値上げ エビデンス TOP3 (fact-checker 調査済、2026-05-27)
+
+記事の論旨「自衛策が必要」を裏付けるための一次資料。三形態（定価値上げ / 上位プラン誘導 / 無料枠縮小）を 1 件ずつ配置。
+
+| # | 事例 | 値上げ概要 | 一次出典 |
+|---|---|---|---|
+| 1 | **Cursor Pro (2025-06)** | 500 リクエスト固定 → $20 クレジット制 (実質 -55%)、CEO 公開謝罪 | https://cursor.com/blog/june-2025-pricing |
+| 2 | **Anthropic Claude Pro → Max (2025-04)** | Pro $20 制限強化 + Max $100/$200 新設で上位プラン誘導 | https://claude.com/blog/max-plan / https://techcrunch.com/2025/04/09/anthropic-rolls-out-a-200-per-month-claude-subscription/ |
+| 3 | **OpenAI ChatGPT Teams (2024-11)** | $25 → $30 (+20%)、ブログ告知なしの静かな値上げ | https://acsapp.com/blog/openai-quietly-raises-chatgpt-team-plan-price-from-25-to-30-per-user-per-month/ / https://www.saaspricepulse.com/blog/chatgpt-pricing-history-2022-2025 |
+
+**補助エビデンス (記事内では本文に出さず、設計書記録のみ):**
+
+- OpenAI ChatGPT Pro $200/月 新設 (2024-12): Plus $20 の x10 上位プラン登場 — https://chatgpt.com/pricing/
+- Devin (Cognition AI) $500/月 → $20+ACU 従量 (2025-04): per-ACU $2.00→$2.25 値上げ — https://venturebeat.com/programming-development/devin-2-0-is-here-cognition-slashes-price-of-ai-software-engineer-to-20-per-month-from-500
+- GitHub Copilot AI クレジット従量制移行 (2026-06 予告): https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/ **【要再検証 — 2026 年予告のため執筆時点で実施済みか確認】**
+- Anthropic ピーク時間帯制限強化 (2026-03): https://www.theregister.com/2026/03/26/anthropic_tweaks_usage_limits/ **【要再検証 — fact-checker 経由 2026 年ソース、URL 実在確認必要】**
+- 円安要因 (1USD 150 円超、2022 年 115 円比 +30-35% 実質負担増) は本文では補足程度
+
+#### その他
 
 - DemoPC 8GB 側の 27B 推定値: Issue #28 (3-8 tps) + willitrunai.com (16.8GB 重み)
 - Ollama-Qwen3 tool calling bug: ollama/ollama#14493, #14601 (実 URL は Issue #20 参照)
