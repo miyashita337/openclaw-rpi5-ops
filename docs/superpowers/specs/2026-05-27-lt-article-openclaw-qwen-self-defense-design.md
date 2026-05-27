@@ -73,7 +73,7 @@
 | 4 | ~~`~/.openclaw/cron/jobs.json` の `agentTurn` schema 抜粋~~ → **本マシン不在**、代替: `HEARTBEAT.md` template 抜粋 + `AGENTS.md` の「過去 entry 消失問題を防ぐ」警告引用 (Issue #30 コメント参照) | テキスト引用 | 取得済 (2026-05-27) |
 | 5 | Ollama GitHub Issue #14493/#14601 (Qwen3 tool calling bug) スクショ | GitHub ページキャプチャ | 未取得 |
 | 6 | **Discord DM スクショ (Polka との対話、エビデンス強)** | ユーザーが Discord アプリで取得 | **ユーザー提供予定** |
-| 7 | `~/.openclaw/workspace/memory/heartbeat-log.md` 抜粋 | テキスト or スクショ | 未取得 |
+| 7 | ~~`~/.openclaw/workspace/memory/heartbeat-log.md` 抜粋~~ → **本マシン不在 (自律 loop 未実装)**、代替: `BOOTSTRAP.md` / `SOUL.md` / `USER.md` 抜粋 (Issue #30 コメント参照) | テキスト引用 | 取得済 (2026-05-27) |
 
 ### 引用ソース
 
