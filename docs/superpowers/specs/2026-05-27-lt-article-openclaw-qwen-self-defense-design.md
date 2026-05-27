@@ -140,6 +140,7 @@
 - Issue #20: Polka tool_call 漏れ + 300s stall (ハマり TOP3 第 2 位の元ネタ)
 - Issue #21: DemoPC Epic + Sub #22-#28 (8GB 側構成の参照)
 - Issue #28: qwen3.6:27b on DemoPC (任意の発展、本記事では「公開ベンチ + 見積もり」として引用)
+- **Article Issue #30 (起票済, 2026-05-27)**: https://github.com/miyashita337/openclaw-rpi5-ops/issues/30
 
 ## 次のステップ
 
