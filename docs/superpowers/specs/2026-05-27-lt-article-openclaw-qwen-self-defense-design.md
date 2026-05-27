@@ -26,7 +26,7 @@
 
 ## データ調達方針 (= Approach D)
 
-- Win Tower 側: 本セッション内で Issue #14 の `scripts/bench-llm-runtime.sh` を使って qwen2.5:7b / qwen3.6:27b の TPS, first-token-ms, VRAM/RAM split を **新規実測**
+- Win Tower 側: 本セッション内で ad-hoc curl + jq bench を組んで qwen2.5:7b / qwen3.6:27b の TPS, first-token-ms, VRAM/RAM split を **新規実測**（Issue #14 で言及されていた `scripts/bench-llm-runtime.sh` は本 repo に未 commit だったため）
 - DemoPC 側: Issue #28 の事前見積もり (VRAM 8GB で 27B は 3-8 tps) + willitrunai.com の重み 16.8GB 情報を引用
 - 記事スタンスは「Win Tower で実際に動かしてみた、8GB 環境なら公開ベンチ・事前見積もりベースだとこうなる見込み」と明記
 
@@ -59,9 +59,9 @@
 
 ### 実測データ (Win Tower で取得。本セッションで実施するか別 Sub-issue として切り出すかは writing-plans フェーズで決定)
 
-- [ ] qwen2.5:7b で 1-2 prompt → TPS, first-token-ms, VRAM 使用量
-- [ ] qwen3.6:27b で 1-2 prompt → TPS, first-token-ms, VRAM/RAM split 比率, CPU offload 層数
-- [ ] Issue #14 の `scripts/bench-llm-runtime.sh` を流用 (既存 commit 済)
+- [x] qwen2.5:7b で 1-2 prompt → TPS, first-token-ms, VRAM 使用量 ← **2026-05-27 取得済、Issue #30 コメント参照**
+- [x] qwen3.6:27b で 1-2 prompt → TPS, first-token-ms, VRAM/RAM split 比率, CPU offload 層数 ← **2026-05-27 取得済、Issue #30 コメント参照**
+- ⚠️ Issue #14 の `scripts/bench-llm-runtime.sh` は **本 repo に未 commit** だったため、ad-hoc curl + jq で代替。再利用しやすくするなら `scripts/bench-llm-runtime-adhoc.sh` として後続 commit する候補
 
 ### 画像エビデンス (7 枚、5 枚以上必須)
 

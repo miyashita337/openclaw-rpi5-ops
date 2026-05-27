@@ -81,9 +81,9 @@ note/Zenn 等で公開する LT 記事 (4,500-5,000 字 / 画像 5-7 枚) の素
 
 ### 実測データ (Win Tower で取得)
 
-- [ ] qwen2.5:7b で 1-2 prompt → TPS, first-token-ms, VRAM 使用量
-- [ ] qwen3.6:27b で 1-2 prompt → TPS, first-token-ms, VRAM/RAM split 比率, CPU offload 層数
-- [ ] 上記 2 件は Issue #14 の `scripts/bench-llm-runtime.sh` を流用
+- [x] qwen2.5:7b で 1-2 prompt → TPS, first-token-ms, VRAM 使用量 ← 取得済 (Issue #30 コメント)
+- [x] qwen3.6:27b で 1-2 prompt → TPS, first-token-ms, VRAM/RAM split 比率, CPU offload 層数 ← 取得済 (Issue #30 コメント)
+- ⚠️ Issue #14 の `scripts/bench-llm-runtime.sh` は **本 repo に未 commit** だったため ad-hoc curl + jq で代替実装
 
 ### 画像エビデンス (7 枚、5 枚以上必須)
 
