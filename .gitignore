@@ -20,7 +20,8 @@ zenn-articles-bootstrap.tar.gz
 captures/
 
 # Article images live in ~/zenn-articles/images/ (Zenn local preview repo)
-images/
+# ルート直下の images/ のみ対象。articles/<slug>/images/ は公開素材として追跡する
+/images/
 
 # Internal docs (design specs, project overviews, review checklists, drafts)
 # Public surface is README.md + CLAUDE.md + articles/ only
