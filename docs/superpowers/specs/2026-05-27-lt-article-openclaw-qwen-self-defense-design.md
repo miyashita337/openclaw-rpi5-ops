@@ -51,8 +51,8 @@
 | 3 | 全体構成図 (Win Tower / Discord / Ollama / OpenClaw) | 500 | 画像 1: Mermaid 構成図 |
 | 4 | ハード選定: なぜ 4070 Ti SUPER 16GB か + 実測表 | 1,000 | 画像 2: nvidia-smi 27B 動作中、画像 3: ollama ps の GPU/CPU split、ベンチ表 |
 | 5 | ソフト選定: なぜ OpenClaw か (n8n/LangChain/Dify 比較) | 600 | 比較表 |
-| 6 | 構築ハマり TOP3 (agentTurn vs systemEvent / Ollama-Qwen3 tool calling bug / 16GB ぎりぎり split) | 1,200 | 画像 4: jobs.json 抜粋、画像 5: bug Issue リンク |
-| 7 | 動いた Polka の対話と「寝てる間に育つ」体験 | 600 | 画像 6: Discord DM スクショ、画像 7: heartbeat-log.md 抜粋 |
+| 6 | 構築ハマり TOP5 (agentTurn vs systemEvent / Ollama-Qwen3 think 暴走 / 16GB ぎりぎり split / **HEARTBEAT.md 空 template silent skip** / **memory edit による過去 entry 消失**) | 1,400 | 画像 4: HEARTBEAT.md template 抜粋 + AGENTS.md 警告引用 (cron/jobs.json は本マシン不在のため代替)、画像 5: Ollama bug Issue リンク |
+| 7 | Polka の persona 設計と「寝てる間に育つ予定」だった話 (BOOTSTRAP/SOUL/USER 抜粋 + 自律 loop 未実装の正直な記録) | 600 | 画像 6: Discord DM スクショ (ユーザー提供)、画像 7: BOOTSTRAP.md / SOUL.md / USER.md 抜粋 (heartbeat-log.md は本マシン不在のため代替) |
 | 8 | コスト試算 + 結論 (4 読者層への餞別) | 500 | 試算表 |
 
 ## 必要素材リストと収集 TODO
@@ -70,7 +70,7 @@
 | 1 | 構成図 (Win Tower + Discord + Ollama + OpenClaw + Polka) | Mermaid 図 → PNG 化 (記事作成時に生成) | 未取得 |
 | 2 | nvidia-smi 27B 動作中の VRAM/プロセス画面 | Win Tower で `nvidia-smi` 実行スクショ | 未取得 |
 | 3 | `ollama ps` の GPU/CPU split 比率 (例: 30/65 layers) | Win Tower で `ollama ps` 実行スクショ | 未取得 |
-| 4 | `~/.openclaw/cron/jobs.json` の `agentTurn` schema 抜粋 | テキスト or スクショ | 未取得 (テキストは即可) |
+| 4 | ~~`~/.openclaw/cron/jobs.json` の `agentTurn` schema 抜粋~~ → **本マシン不在**、代替: `HEARTBEAT.md` template 抜粋 + `AGENTS.md` の「過去 entry 消失問題を防ぐ」警告引用 (Issue #30 コメント参照) | テキスト引用 | 取得済 (2026-05-27) |
 | 5 | Ollama GitHub Issue #14493/#14601 (Qwen3 tool calling bug) スクショ | GitHub ページキャプチャ | 未取得 |
 | 6 | **Discord DM スクショ (Polka との対話、エビデンス強)** | ユーザーが Discord アプリで取得 | **ユーザー提供予定** |
 | 7 | `~/.openclaw/workspace/memory/heartbeat-log.md` 抜粋 | テキスト or スクショ | 未取得 |
@@ -141,6 +141,8 @@
 - Issue #21: DemoPC Epic + Sub #22-#28 (8GB 側構成の参照)
 - Issue #28: qwen3.6:27b on DemoPC (任意の発展、本記事では「公開ベンチ + 見積もり」として引用)
 - **Article Issue #30 (起票済, 2026-05-27)**: https://github.com/miyashita337/openclaw-rpi5-ops/issues/30
+  - 実測 bench コメント: https://github.com/miyashita337/openclaw-rpi5-ops/issues/30#issuecomment-4553390043 (qwen2.5:7b / qwen3.6:27b の TPS / VRAM split / think 暴走再現)
+  - persona + 自律 loop 未実装発見コメント: https://github.com/miyashita337/openclaw-rpi5-ops/issues/30#issuecomment-4553791392 (HEARTBEAT.md template / AGENTS.md 警告 / BOOTSTRAP / SOUL / USER 抜粋)
 
 ## 次のステップ
 
