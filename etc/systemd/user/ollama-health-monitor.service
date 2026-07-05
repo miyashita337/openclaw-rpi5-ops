@@ -1,3 +1,15 @@
+# win-ollama health monitor (Issue #36)
+#
+# デプロイ手順 (wells には本リポの checkout が無いため、Mac からコピー配布する):
+#   scp scripts/ollama-health-monitor.sh harieshokunin@wells:ollama-health-monitor/monitor.sh
+#   scp etc/systemd/user/ollama-health-monitor.service harieshokunin@wells:.config/systemd/user/
+#   ssh harieshokunin@wells 'chmod +x ~/ollama-health-monitor/monitor.sh \
+#     && systemctl --user daemon-reload \
+#     && systemctl --user enable --now ollama-health-monitor.service \
+#     && loginctl enable-linger harieshokunin'
+#
+# ExecStart が %h/ollama-health-monitor/monitor.sh (コピー先) を指すのはこのため。
+
 [Unit]
 Description=win-ollama health monitor (cross-check LLM backend availability, Issue #36)
 After=network-online.target
@@ -7,6 +19,11 @@ Type=simple
 ExecStart=/bin/bash %h/ollama-health-monitor/monitor.sh
 Restart=always
 RestartSec=30s
+
+# hardening (user unit で安全に使える範囲のみ。openclaw-gateway.service の Tier A/B 準拠)
+NoNewPrivileges=yes
+PrivateTmp=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
 
 [Install]
 WantedBy=default.target

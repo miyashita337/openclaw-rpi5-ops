@@ -26,12 +26,30 @@ LOG_FILE="$LOG_DIR/health.log"
 STATE_FILE="$LOG_DIR/state"
 DOWN_SINCE_FILE="$LOG_DIR/down_since"
 FAIL_COUNT_FILE="$LOG_DIR/fail_count"
+LOCK_FILE="$LOG_DIR/monitor.lock"
 mkdir -p "$LOG_DIR"
+
+# 数値系 env の検証 (非数値だと sleep がエラーし busy-loop 化するため fail-fast)
+for v in INTERVAL_SEC FAIL_THRESHOLD CURL_TIMEOUT_SEC; do
+  val=$(eval "printf '%s' \"\$$v\"")
+  case "$val" in
+    ''|*[!0-9]*) echo "ERROR: $v must be a positive integer (got: $val)" >&2; exit 1 ;;
+  esac
+done
+
+# 多重起動ガード (手動デバッグ実行と systemd 起動の併走で状態ファイルが壊れるのを防ぐ)
+exec 200>"$LOCK_FILE"
+if ! flock -n 200; then
+  echo "ERROR: another instance is already running (lock: $LOCK_FILE)" >&2
+  exit 1
+fi
 
 log() {
   printf '%s\t%s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$1" >> "$LOG_FILE"
 }
 
+# ローテーションは 1 世代のみ (遷移ログ主体で 1MB 到達は稀なため意図的に簡素化)
+# stat -c は GNU coreutils 前提 (wells = Debian/Linux 専用スクリプト)
 rotate_log_if_needed() {
   [ -f "$LOG_FILE" ] || return 0
   local size
@@ -44,7 +62,7 @@ rotate_log_if_needed() {
 
 notify() {
   local title="$1" message="$2" priority="$3"
-  if [ ! -x "$NOTIFY_SCRIPT" ] && [ ! -f "$NOTIFY_SCRIPT" ]; then
+  if [ ! -f "$NOTIFY_SCRIPT" ]; then
     log "NOTIFY_FAIL	script not found: $NOTIFY_SCRIPT"
     return 1
   fi
