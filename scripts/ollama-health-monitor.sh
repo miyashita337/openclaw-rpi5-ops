@@ -49,11 +49,10 @@ log() {
 }
 
 # ローテーションは 1 世代のみ (遷移ログ主体で 1MB 到達は稀なため意図的に簡素化)
-# stat -c は GNU coreutils 前提 (wells = Debian/Linux 専用スクリプト)
 rotate_log_if_needed() {
   [ -f "$LOG_FILE" ] || return 0
   local size
-  size=$(stat -c %s "$LOG_FILE" 2>/dev/null || echo 0)
+  size=$(wc -c < "$LOG_FILE" 2>/dev/null || echo 0)
   if [ "$size" -gt "$LOG_MAX_BYTES" ]; then
     mv "$LOG_FILE" "$LOG_FILE.1"
     log "ROTATE	previous log moved to health.log.1"
@@ -83,10 +82,19 @@ format_duration() {
   printf '%dh%02dm' $((sec / 3600)) $((sec % 3600 / 60))
 }
 
+# 状態ファイルが空・破損していても安全なデフォルト (UP / 0) にフォールバックする
 prev_state="UP"
-[ -f "$STATE_FILE" ] && prev_state=$(cat "$STATE_FILE")
+if [ -f "$STATE_FILE" ] && [ "$(cat "$STATE_FILE" 2>/dev/null)" = "DOWN" ]; then
+  prev_state="DOWN"
+fi
 fail_count=0
-[ -f "$FAIL_COUNT_FILE" ] && fail_count=$(cat "$FAIL_COUNT_FILE")
+if [ -f "$FAIL_COUNT_FILE" ]; then
+  val=$(cat "$FAIL_COUNT_FILE" 2>/dev/null)
+  case "$val" in
+    ''|*[!0-9]*) fail_count=0 ;;
+    *) fail_count=$val ;;
+  esac
+fi
 
 log "STARTUP	ollama-health-monitor PID=$$ url=$TARGET_URL interval=${INTERVAL_SEC}s threshold=$FAIL_THRESHOLD"
 trap 'log "SHUTDOWN	ollama-health-monitor PID=$$"; exit 0' TERM INT
@@ -97,7 +105,10 @@ while true; do
   if check_once; then
     fail_count=0
     if [ "$prev_state" = "DOWN" ]; then
-      down_since=$(cat "$DOWN_SINCE_FILE" 2>/dev/null || date '+%s')
+      down_since=$(cat "$DOWN_SINCE_FILE" 2>/dev/null)
+      case "$down_since" in
+        ''|*[!0-9]*) down_since=$(date '+%s') ;;  # 空・破損時は現在時刻 (duration=0h00m)
+      esac
       duration=$(( $(date '+%s') - down_since ))
       log "RECOVER	$TARGET_NAME	downtime=$(format_duration "$duration")"
       notify "$TARGET_NAME RECOVER" "$TARGET_NAME が復旧しました (down時間: $(format_duration "$duration"))" 0
