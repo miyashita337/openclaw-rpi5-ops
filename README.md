@@ -21,7 +21,7 @@ flowchart LR
         SSHD["OpenSSH for Windows 9.5 :22<br/>RDP :3389"]
     end
     DISCORD["Discord"] -->|"メッセージ"| GW
-    GW -->|"Tailscale<br/>win-ollama:11434"| OL
+    GW -->|"Tailscale IP 直指定<br/>(windows-claude-host):11434"| OL
     MON -.->|"/api/version"| OL
     CC -->|"ssh wells (鍵)"| RPI
     CC -->|"ssh win11 (パスワード)"| SSHD
@@ -37,7 +37,7 @@ flowchart LR
 |---|---|---|---|---|---|
 | Mac | MacBook Pro (MacBookPro18,2) | macOS 26.5.2 | Apple M1 Max / 32 GB / 926 GB SSD | Tailscale | 操作端末（Claude Code / Cowork / 自律ループの常駐ジョブ） |
 | `wells` | Raspberry Pi 5 Model B Rev 1.1 | Debian 13 trixie (6.18.34+rpt-rpi-2712 aarch64) | Cortex-A76 ×4 / 8 GB / NVMe 234 GB (使用 22 GB) | Tailscale + LAN (192.168.x.x) | OpenClaw Gateway・Discord 受信・監視・別リポの cron |
-| `uss-enterprise` | Windows タワー（Tailscale 名 `windows-claude-host`） | Windows 11 | Ryzen 7 7700 / DDR5-5600 32 GB / RTX 4070 Ti SUPER 16 GB VRAM ※ | Tailscale (`win-ollama`) + LAN (192.168.x.x) | Ollama LLM バックエンド・Claude Code（Windows 側） |
+| `uss-enterprise` | Windows タワー（Tailscale 名 `windows-claude-host`） | Windows 11 | Ryzen 7 7700 / DDR5-5600 32 GB / RTX 4070 Ti SUPER 16 GB VRAM ※ | Tailscale（MagicDNS 名 `windows-claude-host`。wells 側は IP 直指定、`win-ollama` は Mac の SSH エイリアス）+ LAN (192.168.x.x) | Ollama LLM バックエンド・Claude Code（Windows 側） |
 | iPhone | iPhone | iOS | — | Tailscale | 操作端末 |
 
 ※ uss-enterprise のハードウェア諸元は SSH 鍵未登録のため今回は未実測。値は [Issue #14](https://github.com/miyashita337/openclaw-rpi5-ops/issues/14) の実機ベンチ記録（`nvidia-smi` 観測、driver 591.86 当時）による。
@@ -69,7 +69,7 @@ Mac の `ssh win11` は LAN アドレス宛て、wells / OpenClaw が使う `win
 | OS | Debian GNU/Linux 13 (trixie)、kernel `6.18.34+rpt-rpi-2712`、aarch64 |
 | 稼働 | uptime 10 日（2026-09-16 時点）、load avg ≈ 0 |
 | ネットワーク | Tailscale 1.102.2、LAN 192.168.x.x、IPv6 あり |
-| ツール | node 22.23.1 / npm 10.9.8 / **OpenClaw 2026.5.4 (b8f6e16)** / python3 3.13.5 / git 2.47.3 / gh 2.97.0 / Claude Code 2.1.269 / rpi-connect 2.12.0（Docker・Ollama なし） |
+| ツール | node 22.23.1 / npm 10.9.8 / **OpenClaw 2026.5.4 (b8f6e16)** / python3 3.13.5 / git 2.47.3 / gh 2.97.0 / Claude Code 2.1.273 / rpi-connect 2.12.0（Docker・Ollama なし） |
 | リポ | `~/agent-base` / `~/openclaw`（openclaw/openclaw upstream）/ `~/team_salary` |
 
 #### systemd（system）
