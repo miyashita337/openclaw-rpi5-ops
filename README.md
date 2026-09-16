@@ -76,7 +76,7 @@ Mac の `ssh win11` は LAN アドレス宛て、wells / OpenClaw が使う `win
 
 | ユニット | 状態 | 内容 |
 |---|---|---|
-| `openclaw-gateway.service` | running / enabled | `/usr/local/bin/openclaw gateway --bind loopback --port 18789 --auth token`。専用ユーザー `openclaw`、`HOME=/var/lib/openclaw`、`EnvironmentFile=/etc/openclaw/openclaw.env`。Tier A/B/B-2/C の systemd hardening（`ProtectSystem=strict`、`SystemCallFilter`、`MemoryMax=2G` 等。記事 #5）。ユニット本体は `etc/systemd/system/openclaw-gateway.service` |
+| `openclaw-gateway.service` | running / enabled | `/usr/local/bin/openclaw gateway --bind loopback --port 18789 --auth token --allow-unconfigured`。専用ユーザー `openclaw`、`HOME=/var/lib/openclaw`、`EnvironmentFile=/etc/openclaw/openclaw.env`。Tier A/B/B-2/C の systemd hardening（`ProtectSystem=strict`、`SystemCallFilter`、`MemoryMax=2G` 等。記事 #5）。ユニット本体は `etc/systemd/system/openclaw-gateway.service` |
 | `discord-ollama-bridge.service` | **disabled / inactive** | Discord ↔ Ollama 最小 forward bot（#11 Phase 2、`/opt/discord-ollama-bridge/`、専用ユーザー `discord-bridge`）。OpenClaw 経由で E2E 成立後は停止中 |
 | `tailscaled.service` | running | Tailscale |
 | `wayvnc.service` / `wayvnc-control.service` | running | VNC（`*:5900`）。記事 #3 |
@@ -152,8 +152,9 @@ Mac の `ssh win11` は LAN アドレス宛て、wells / OpenClaw が使う `win
 # wells の gateway 状態
 ssh wells 'systemctl status openclaw-gateway --no-pager; journalctl -u openclaw-gateway -n 50 --no-pager'
 
-# win-ollama の死活（wells 経由。URL は scripts/ollama-health-monitor.sh の TARGET_URL と同じ）
-ssh wells 'curl -s -m 5 "$OLLAMA_HEALTH_URL"; tail -5 ~/ollama-health-monitor/health.log'
+# win-ollama の死活（wells 経由）。監視スクリプトと同じく HTTP 4xx/5xx も失敗扱い（-f）にし、
+# curl の終了コードをそのまま返す。ホスト名は Tailscale MagicDNS 名（scripts/ollama-health-monitor.sh の TARGET_URL と同一機）
+ssh wells 'curl -sf -m 5 http://windows-claude-host:11434/api/version; rc=$?; echo; tail -5 ~/ollama-health-monitor/health.log; exit "$rc"'
 
 # Windows 側へ（パスワード認証。鍵登録は #37）
 ssh win11
