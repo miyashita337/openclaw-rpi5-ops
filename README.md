@@ -86,7 +86,7 @@ Mac の `ssh win11` は LAN アドレス宛て、wells / OpenClaw が使う `win
 
 | ユニット | 内容 |
 |---|---|
-| `ollama-health-monitor.service` | `~/ollama-health-monitor/monitor.sh`（本リポ `scripts/ollama-health-monitor.sh` のコピー）。`win-ollama` の `/api/version` を 60 秒間隔でポーリングし、DROP / RECOVER を Pushover 通知（#36）。ログ `~/ollama-health-monitor/health.log` |
+| `ollama-health-monitor.service` | `~/ollama-health-monitor/monitor.sh`（本リポ `scripts/ollama-health-monitor.sh` のコピー）。`win-ollama` の `/api/version` を 60 秒間隔でポーリングし、DROP / RECOVER を Pushover 通知（#36）。ログ `~/ollama-health-monitor/health.log`。接続先は `~/ollama-health-monitor/monitor.env` の `OLLAMA_HEALTH_URL` で指定（#45） |
 | `rpi-connect.service` / `rpi-connect-wayvnc.service` | Raspberry Pi Connect（リモートデスクトップ） |
 | `network-monitor.service` | ネットワーク監視 |
 

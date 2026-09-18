@@ -19,7 +19,7 @@ Discord ↔ Ollama 最小 forward bot.
 
 env (~/.env):
   DISCORD_TOKEN=<新規 bot token>
-  OLLAMA_URL=http://100.123.241.106:11434
+  OLLAMA_URL=http://<tailscale-ip>:11434
   OLLAMA_MODEL=qwen3.6:27b
 """
 
@@ -44,13 +44,15 @@ logging.basicConfig(
 )
 
 TOKEN = os.environ.get("DISCORD_TOKEN")
-OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://100.123.241.106:11434").rstrip("/")
+OLLAMA_URL = os.environ.get("OLLAMA_URL", "").rstrip("/")
 MODEL = os.environ.get("OLLAMA_MODEL", "qwen3.6:27b")
 TIMEOUT_SECONDS = int(os.environ.get("OLLAMA_TIMEOUT", "300"))
 MAX_DISCORD_CHARS = 1900  # Discord hard limit 2000、余裕を見て 1900
 
 if not TOKEN:
     sys.exit("DISCORD_TOKEN env var is required")
+if not OLLAMA_URL:
+    sys.exit("OLLAMA_URL env var is required (e.g. http://<tailscale-ip>:11434)")
 
 intents = discord.Intents.default()
 intents.message_content = True

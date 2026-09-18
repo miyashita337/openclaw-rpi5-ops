@@ -1,7 +1,7 @@
 #!/bin/bash
 # win-ollama (uss-enterprise) health monitor for wells (Issue #36)
 #
-# OpenClaw Gateway のバックエンド LLM ホスト (100.123.241.106:11434) を
+# OpenClaw Gateway のバックエンド LLM ホスト (OLLAMA_HEALTH_URL で指定、例 http://<tailscale-ip>:11434) を
 # 定期ヘルスチェックし、状態遷移 (UP→DOWN / DOWN→UP) を Pushover 通知する。
 # 背景: uss-enterprise が 38 日間オフラインでも誰も気づかなかった (Epic #34)。
 #
@@ -13,7 +13,7 @@
 
 set -u
 
-TARGET_URL="${OLLAMA_HEALTH_URL:-http://100.123.241.106:11434/api/version}"
+TARGET_URL="${OLLAMA_HEALTH_URL:?OLLAMA_HEALTH_URL is required (e.g. http://<tailscale-ip>:11434/api/version). Set it in ~/ollama-health-monitor/monitor.env}"
 TARGET_NAME="${OLLAMA_HEALTH_NAME:-win-ollama}"
 INTERVAL_SEC="${OLLAMA_HEALTH_INTERVAL_SEC:-60}"
 FAIL_THRESHOLD="${OLLAMA_HEALTH_FAIL_THRESHOLD:-3}"
