@@ -3,7 +3,7 @@
 # wells (trixie + Pi5 + labwc) で WayVNC を実機検証するための一発スクリプト。
 #
 # 使い方 (Mac 側ターミナルから):
-#   ssh harieshokunin@wells 'bash -s' < ~/openclaw-rpi5-ops/scripts/verify-wayvnc.sh
+#   ssh wells 'bash -s' < ~/openclaw-rpi5-ops/scripts/verify-wayvnc.sh
 # または wells に SSH 後:
 #   bash ~/openclaw-rpi5-ops/scripts/verify-wayvnc.sh
 #

@@ -1,14 +1,15 @@
 # win-ollama health monitor (Issue #36)
 #
-# デプロイ手順 (wells には本リポの checkout が無いため、Mac からコピー配布する):
-#   ssh harieshokunin@wells 'mkdir -p ~/ollama-health-monitor' && scp etc/ollama-health-monitor/monitor.env.example harieshokunin@wells:ollama-health-monitor/monitor.env
+# デプロイ手順 (wells には本リポの checkout が無いため、Mac からコピー配布する。
+# `wells` は ~/.ssh/config のエイリアス、ログインユーザーは同 config で指定):
+#   ssh wells 'mkdir -p ~/ollama-health-monitor' && scp etc/ollama-health-monitor/monitor.env.example wells:ollama-health-monitor/monitor.env
 #   (wells 側で monitor.env の <tailscale-ip> を実 IP に書き換える)
-#   scp scripts/ollama-health-monitor.sh harieshokunin@wells:ollama-health-monitor/monitor.sh
-#   scp etc/systemd/user/ollama-health-monitor.service harieshokunin@wells:.config/systemd/user/
-#   ssh harieshokunin@wells 'chmod +x ~/ollama-health-monitor/monitor.sh \
+#   scp scripts/ollama-health-monitor.sh wells:ollama-health-monitor/monitor.sh
+#   scp etc/systemd/user/ollama-health-monitor.service wells:.config/systemd/user/
+#   ssh wells 'chmod +x ~/ollama-health-monitor/monitor.sh \
 #     && systemctl --user daemon-reload \
 #     && systemctl --user enable --now ollama-health-monitor.service \
-#     && loginctl enable-linger harieshokunin'
+#     && loginctl enable-linger "$USER"'
 #
 # ExecStart が %h/ollama-health-monitor/monitor.sh (コピー先) を指すのはこのため。
 

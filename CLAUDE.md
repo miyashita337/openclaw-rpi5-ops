@@ -52,7 +52,7 @@ command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1 \
 
 ### 参照ルール
 
-- 内部 docs は **Claude が編集・参照する場合は絶対パス** で扱う (`/Users/harieshokunin/openclaw-rpi5-ops/docs/<file>.md`)
+- 内部 docs は **Claude が編集・参照する場合は絶対パス** で扱う (`<リポ絶対パス>/docs/<file>.md`。`$HOME` や `~` はファイルツールでは展開されないので使わない)
 - 公開記事の本文中で内部 docs を参照しない (URL リンクが解決しなくなる)
 - 内部 docs を新規作成する場合は **必ず `docs/` 配下** に置く (root 直下に置かない)
 - gitignore 解除して公開したい docs があれば該当ファイルだけ `!docs/specific-file.md` を `.gitignore` に追記する設計
